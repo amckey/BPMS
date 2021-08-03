@@ -1,0 +1,50 @@
+@import "../../styles/mixins";
+
+.hero {
+  height: 100vh;
+  position: relative;
+  @include sm {
+    height: 100vh;
+  }
+  &_container {
+    @include container;
+    padding-top: 140px;
+    @include sm {
+      padding-top: 50px;
+    }
+  }
+  h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    @include sm {
+      font-size: 36px;
+      line-height: 45px;
+      margin-bottom: 25px;
+    }
+  }
+  h3 {
+    max-width: 700px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    @include sm {
+      font-size: 14px;
+      margin-bottom: 15px;
+      max-width: 80%;
+    }
+  }
+  button {
+    @include transparent_button;
+  }
+  &_gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    background: linear-gradient( transparent 0%, #1d2025 100%);
+    @include sm {
+      height: 130px;
+    }
+  }
+}

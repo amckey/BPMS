@@ -1,0 +1,90 @@
+@import "../../styles/mixins";
+
+.contact {
+  height: 700px;
+  background-color: #171a1e;
+  padding: 40px 0 80px 0;
+  @include sm {
+    height: unset;
+    min-height: 100vh;
+    padding: 30px 0;
+  }
+  &_container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    font-size: 48px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    @include sm {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+  }
+  &_form {
+    width: 1000px;
+    @include sm {
+      width: 100%;
+    }
+    ::placeholder {
+      font-family: 'Roboto';
+      font-size: 18px;
+      color: #aaaaaa;
+    }
+  }
+}
+
+.form {
+  form {
+    width: 100%;
+
+  }
+
+
+  &_input {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #212429;
+    border: none;
+    border-bottom: 1px solid #aaaaaa;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    @include sm {
+      margin-bottom: 10px;
+    }
+  }
+
+
+  &_name {
+    width: 100%;
+    display: flex;
+    .form_input {
+      width: 50%;
+      @include sm {
+        width: 100%;
+      }
+      &:first-of-type {
+        margin-right: 10px;
+        @include sm {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &_button {
+    button {
+      @include blue_button;
+      border: 1px solid #52d1e0;
+    }
+  }
+}
+textarea {
+  margin-bottom: 20px!important;
+}

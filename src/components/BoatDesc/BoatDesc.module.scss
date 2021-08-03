@@ -1,0 +1,177 @@
+@import "../../styles/mixins";
+
+.desc {
+  background: #171a1e;
+  padding: 40px 0 40px 0;
+  @include sm {
+    padding: 20px 0 20px 0;
+  }
+  &_container {
+    @include container;
+  }
+  &_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    @include sm {
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+  }
+  &_main {
+    width: 550px;
+    @include sm {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 18px;
+      line-height: 21px;
+      color: #aaa;
+      @include sm {
+        font-size: 14px;
+      }
+    }
+  }
+  &_elements {
+    display: flex;
+    width: 500px;
+    @include sm {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  &_element {
+    min-width: 100px;
+    margin-right: 50px;
+    @include sm {
+      min-width: 65px;
+      margin-right: 40px;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+    h4 {
+      color: #aaa;
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      @include sm {
+        font-size: 16px;
+      }
+    }
+    p {
+      font-size: 36px;
+      color: #fff;
+      text-transform: uppercase;
+      @include sm {
+        font-size: 20px;
+      }
+    }
+  }
+  &_tables {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 500px 500px;
+    @include sm {
+      grid-template-columns: 100%;
+      justify-content: center;
+    }
+  }
+  &_table {
+    margin-bottom: 30px;
+    @include sm {
+      margin-bottom: 20px;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      @include sm {
+        font-size: 18px;
+        background-color: #1d2025;
+        margin-bottom: 0;
+        padding: 11px;
+        line-height: 23px;
+
+      }
+    }
+    span {
+      text-transform: uppercase;
+    }
+    ul, li {
+      width: 100%;
+    }
+    li {
+      min-height: 37px;
+      padding: 5px 0;
+      &:nth-child(even) {
+        background-color: #1d2025;
+      }
+      @include sm {
+        &:first-of-type {
+          padding-top: 25px;
+          height: 62px;
+          border-top: 2px solid rgba(#fff, .2);
+        }
+        &:nth-child(odd) {
+          background-color: #1d2025;
+        }
+        &:nth-child(even) {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  &_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    p {
+      color: #aaaaaa;
+      font-size: 18px;
+    }
+  }
+  &_technical {
+    @include sm {
+      margin-bottom: 20px;
+    }
+  }
+  &_mobile {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1d2025;
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      outline: none;
+      margin-right: 5px;
+      &.active {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &_list {
+    transition: all .4s;
+    position: relative;
+    top: -20px;
+  }
+  &_button {
+    img {
+      transition: all .3s;
+    }
+  }
+}

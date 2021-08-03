@@ -1,0 +1,92 @@
+@import "../../styles/mixins";
+
+.advantages {
+  min-height: 700px;
+  padding: 40px;
+  @include sm {
+    min-height: 490px;
+    padding: 40px 0 80px 0;
+  }
+  &_container {
+    @include container;
+  }
+  h2 {
+    font-size: 48px;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    @include sm {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+  }
+  &_list {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @include sm {
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none;
+        flex-wrap: nowrap;
+      }
+    }
+    ul::-webkit-scrollbar {
+      display: none;
+    }
+    li {
+      margin-right: 15px;
+    }
+  }
+  &_item {
+    width: 385px;
+    height: 400px;
+    background-color: rgba(#000, .7);
+    border-radius: 5px;
+    border-top: 10px solid rgba(#52d1e0, .5);
+    transition: .3s;
+    margin-bottom: 30px;
+    padding: 10px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    @include sm {
+      width: 300px;
+      height: 350px;
+      padding: 20px 15px 50px 15px;
+      margin-bottom: 0;
+    }
+    &:hover {
+      border-top: 10px solid #52d1e0;
+      transform: scaleY(1.05);
+      @include sm {
+        transform: scaleY(1);
+      }
+    }
+    h3 {
+      font-size: 28px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      height: 80px;
+      line-height: 40px;
+      @include sm {
+        height: 55px;
+        line-height: 35px;
+        margin-bottom: 24px;
+        font-size: 24px;
+      }
+    }
+    p {
+      font-size: 24px;
+      color: #aaaaaa;
+      line-height: 35px;
+      @include sm {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+}

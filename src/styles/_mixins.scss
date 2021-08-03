@@ -1,0 +1,93 @@
+@mixin container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  @include lg {
+    max-width: 966px;
+  }
+  @media screen and (max-width: 1000px) {
+    max-width: calc(100vw - 60px);
+  }
+  @include sm {
+    max-width: calc(100vw - 20px);
+  }
+}
+@mixin transparent_button {
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid white;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 11px 17px;
+  cursor: pointer;
+  @include sm {
+    font-size: 12px;
+    padding: 9px 16px;
+  }
+}
+
+@mixin blue_button {
+  background-color: #52d1e0;
+  border-radius: 3px;
+  color: #171a1e;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 9px 18px;
+  cursor: pointer;
+  @include sm {
+    font-size: 12px;
+    padding: 9px 16px;
+  }
+}
+
+@mixin page_wrapper {
+  @include flex_between;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+@mixin flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Large tablets + small desktop screens */
+@mixin lg {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
+/* tablets */
+@mixin md {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+/* phones */
+@mixin sm {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media screen and (max-width: 415px) {
+    @content;
+  }
+}
+
+@mixin xss {
+  @media screen and (max-width: 335px) {
+    @content;
+  }
+}

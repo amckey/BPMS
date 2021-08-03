@@ -1,0 +1,106 @@
+@import "../../styles/mixins";
+
+.reviews {
+  min-height: 700px;
+  padding: 40px;
+  &_container {
+    @include container;
+  }
+  @include sm {
+    padding: 30px 0;
+    min-height: 70vh;
+  }
+  h2 {
+    font-size: 48px;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    @include sm {
+      height: 55px;
+      line-height: 35px;
+      margin-bottom: 24px;
+      font-size: 36px;
+    }
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 20px;
+    @include sm {
+      display: flex;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none;
+      flex-wrap: nowrap;
+    }
+  }
+  ul::-webkit-scrollbar {
+    display: none;
+  }
+  li {
+    width: 540px;
+    min-height: 230px;
+    @include sm {
+      width: 100%;
+      min-height: 300px;
+      min-width: 300px;
+    }
+  }
+  &_item {
+    background-color: rgba(#000, .7);
+    padding: 10px;
+    border-radius: 4px;
+  }
+  &_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 13px;
+    border-bottom: 2px solid rgba(#fff, .2);
+  }
+  &_user {
+    display: flex;
+    align-items: center;
+  }
+  &_avatar {
+    margin-right: 5px;
+  }
+  &_name {
+    h4 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      @include sm {
+        font-size: 14px;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      @include sm {
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+  }
+  &_boat {
+    text-align: right;
+    h4 {
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      @include sm {
+        font-size: 14px;
+      }
+    }
+  }
+  &_desc {
+    padding-top: 10px;
+    p {
+      font-size: 14px;
+      color: #aaaaaa;
+      line-height: 23px;
+    }
+  }
+}
