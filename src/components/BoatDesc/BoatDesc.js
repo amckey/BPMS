@@ -61,7 +61,7 @@ const BoatDesc = () => {
             </li>
         )
     })
-    const equipmentList = equipment.map((item, index) => {
+    const equipmentDetailsList = equipment.map((item, index) => {
         return (
             <li key={index}>
                 <div className={styles.desc_item}>
@@ -71,7 +71,7 @@ const BoatDesc = () => {
             </li>
         )
     })
-    const accesoriesList = accesories.map((item, index) => {
+    const accesoriesDetailsList = accesories.map((item, index) => {
         return (
             <li key={index}>
                 <div className={styles.desc_item}>
@@ -163,12 +163,12 @@ const BoatDesc = () => {
                             {isMobile ?
                                 <div className={styles.desc_list} style={isMobile && readyModelsState.equipment.active ? {opacity: 1, zIndex: 3, top: 0} : {opacity: 0, zIndex: '-3', height: 0, overflow: 'hidden', top: '-40px'}}>
                                     <ul>
-                                        {techDetailsList}
+                                        {equipmentDetailsList}
                                     </ul>
                                 </div> :
                                 <div className={styles.desc_list}>
                                     <ul>
-                                        {techDetailsList}
+                                        {equipmentDetailsList}
                                     </ul>
                                 </div>
                             }
@@ -184,12 +184,12 @@ const BoatDesc = () => {
                             {isMobile ?
                                 <div className={styles.desc_list} style={isMobile && readyModelsState.accessories.active ? {opacity: 1, zIndex: 3, top: 0} : {opacity: 0, zIndex: '-3', height: 0, overflow: 'hidden', top: '-40px'}}>
                                     <ul>
-                                        {techDetailsList}
+                                        {accesoriesDetailsList}
                                     </ul>
                                 </div> :
                                 <div className={styles.desc_list}>
                                     <ul>
-                                        {techDetailsList}
+                                        {accesoriesDetailsList}
                                     </ul>
                                 </div>
                             }

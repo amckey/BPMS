@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styles from './ContactUs.module.scss';
 import {useMediaQuery} from 'react-responsive';
-import MessageModal from "../MessageModal/MessageModal";
+// import MessageModal from "../MessageModal/MessageModal";
 import Cross from "../../assets/cross.svg";
 import Tick from "../../assets/tick.svg";
 
@@ -37,6 +37,7 @@ const ContactUs = () => {
                 <h2>Связаться с нами</h2>
                 <div className={styles.contact_form}>
                     <iframe
+                    title="form"
                     name="hidden_iframe"
                     id="hidden_iframe"
                     style={{display: 'none'}}
