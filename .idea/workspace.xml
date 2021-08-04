@@ -69,18 +69,26 @@
       <option name="presentableId" value="Default" />
       <updated>1627029752628</updated>
       <workItem from="1627029754873" duration="68646000" />
-      <workItem from="1628065582114" duration="7087000" />
+      <workItem from="1628065582114" duration="7218000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modal" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1627030554582">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1627030554582" />
+    <state x="309" y="49" key="CommitChangelistDialog2" timestamp="1628088728863">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="309" y="49" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1628088728863" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1628085551145">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
