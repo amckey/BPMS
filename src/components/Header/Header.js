@@ -8,6 +8,7 @@ import Burger from '../../assets/burger.svg';
 const Header = () => {
     const isMobile = useMediaQuery({maxWidth: 767});
     const [toggleLanguages,setToggleLanguages] = useState(false);
+    const [toggleBurger, setToggleBurger] = useState(false);
     const [language, setLanguage] = useState('Русский');
     const nav = [
         {
@@ -58,12 +59,21 @@ const Header = () => {
     const handleToggleLanguages = () => {
         setToggleLanguages(!toggleLanguages);
     }
+    const handleToggleBurger = () => {
+        setToggleBurger(!toggleBurger);
+    }
     
     return (
         <header className={styles.header}>
+            {toggleBurger ? <div className={styles.overlay} id="overlay" onClick={handleToggleBurger}></div> : null}
             <div className={styles.header_container}>
                 {isMobile && <div className={styles.header_burger}>
-                    <img src={Burger} alt="burger"/>
+                    <img src={Burger} alt="burger" onClick={handleToggleBurger}/>
+                    <div className={styles.toggle_burger} style={toggleBurger ? {opacity: 1} : {opacity: 0, top:'20px', zIndex: '-3'}}>
+                        <ul>
+                            {navList}
+                        </ul>
+                    </div>
                 </div>}
                 <div className={styles.header_logo}>
                     <img src={Logo} alt="logo"/>

@@ -2,70 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acf73b62-542f-48f1-a8c9-6a7bfdf14d3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/EAIC.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/avatar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/big_logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/boat1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/boat2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/boat3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/boat4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/boatIcon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/burger.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/draft.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/empty_star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/heroBoat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/instagram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/letter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/location.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/main.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/phone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/sea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/small_arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/youtube.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Advantages/Advantage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Advantages/Advantages.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BoatDesc/BoatDesc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BoatDesc/BoatDesc.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BoatGallery/BoatGallery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BoatGallery/BoatGallery.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BoatHero/BoatHero.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BoatHero/BoatHero.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainHero/MainHero.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainHero/MainHero.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Reviews/Reviews.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Reviews/Reviews.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WhyUs/WhyUs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WhyUs/WhyUs.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fixtures/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/BoatPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/_globals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/pages/home.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/cross.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/tick.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MessageModal/MessageModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MessageModal/MessageModal.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +45,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -132,7 +78,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627029752628</updated>
-      <workItem from="1627029754873" duration="67778000" />
+      <workItem from="1627029754873" duration="68646000" />
+      <workItem from="1628065582114" duration="6275000" />
     </task>
     <servers />
   </component>
@@ -144,6 +91,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1627030554582" />
+    <state x="229" y="104" key="SettingsEditor" timestamp="1628085097455">
+      <screen x="0" y="25" width="1440" height="822" />
+    </state>
+    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1628084783242" />
+    <state x="229" y="104" key="SettingsEditor/0.25.1440.822@0.25.1440.822" timestamp="1628085097455" />
     <state x="385" y="210" key="run.anything.popup" timestamp="1627327497596">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -159,13 +111,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Catalog/Catalog.js</url>
           <line>110</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/BoatDesc/BoatDesc.js</url>
           <line>153</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

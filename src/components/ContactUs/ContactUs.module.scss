@@ -4,10 +4,27 @@
   height: 700px;
   background-color: #171a1e;
   padding: 40px 0 80px 0;
+  position: relative;
   @include sm {
     height: unset;
     min-height: 100vh;
     padding: 30px 0;
+  }
+  &_overlay {
+    background-color: rgba(#1d2025,.5);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &_modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
   }
   &_container {
     @include container;

@@ -5,8 +5,18 @@
   height: 100px;
   padding: 10px 0;
   z-index: 5;
+  position: relative;
   @include sm {
     height: 80px;
+  }
+  .overlay {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 1000vh;
+    background-color: rgba(#000, .7);
+    z-index: 2;
   }
   &_container {
     @include container;
@@ -16,6 +26,38 @@
   }
   &_burger {
     cursor: pointer;
+    position: relative;
+    .toggle_burger {
+      position: absolute;
+      top: 54px;
+      left: 0;
+      z-index: 3;
+      height: 0;
+      transition: all .3s;
+      ul {
+        max-height: 250px;
+        overflow-y: scroll;
+        background-color: #1d2025;
+        width: 200px;
+        max-width: 160px;
+        padding: 10px;
+        border-radius: 4px;
+      }
+      li {
+        cursor: pointer;
+        transition: all 0.3s;
+        padding: 5px;
+        font-size: 14px;
+        text-transform: uppercase;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        &:hover {
+          background-color: rgba(#fff, .1);
+          color: #fff;
+        }
+      }
+    }
   }
   &_logo {
     cursor: pointer;
