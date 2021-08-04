@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acf73b62-542f-48f1-a8c9-6a7bfdf14d3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/cross.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/tick.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MessageModal/MessageModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MessageModal/MessageModal.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +37,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -79,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627029752628</updated>
       <workItem from="1627029754873" duration="68646000" />
-      <workItem from="1628065582114" duration="6275000" />
+      <workItem from="1628065582114" duration="6801000" />
     </task>
     <servers />
   </component>
@@ -91,10 +83,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1627030554582" />
-    <state x="229" y="104" key="SettingsEditor" timestamp="1628085097455">
-      <screen x="0" y="25" width="1440" height="822" />
+    <state x="229" y="86" key="SettingsEditor" timestamp="1628085551145">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1628084783242" />
+    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1628085551145" />
     <state x="229" y="104" key="SettingsEditor/0.25.1440.822@0.25.1440.822" timestamp="1628085097455" />
     <state x="385" y="210" key="run.anything.popup" timestamp="1627327497596">
       <screen x="0" y="0" width="1440" height="900" />
