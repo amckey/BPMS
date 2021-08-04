@@ -7,7 +7,7 @@ import Tick from "../../assets/tick.svg";
 
 const ContactUs = () => {
     const isMobile = useMediaQuery({maxWidth: 767});
-    const [toggleModal, setToggleModal] = useState(true);
+    const [toggleModal, setToggleModal] = useState(false);
     const handleSubmit = (e) => {
         e.preventDefault();
         setToggleModal(true);
