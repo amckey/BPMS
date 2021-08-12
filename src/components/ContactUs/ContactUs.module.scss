@@ -105,3 +105,42 @@
 textarea {
   margin-bottom: 20px!important;
 }
+
+.modal {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d2025;
+  border-radius: 10px;
+  z-index: 5;
+  box-shadow: 0 4px 10px rgba(black, 0.5);
+  position: relative;
+  padding: 25px 80px 40px 80px;
+  justify-content: space-between;
+  text-align: center;
+  @include sm {
+    width: 300px;
+    height: 80vh;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &_cross {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  &_button {
+    button {
+      @include blue_button;
+      border: 1px solid #52d1e0;
+      width: 100px;
+    }
+  }
+}

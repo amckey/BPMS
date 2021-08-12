@@ -11,11 +11,11 @@
     height: 100%;
     object-fit: cover;
     @include sm {
-      width: unset;
+      //width: unset;
     }
   }
   &_list {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     @include sm {
       margin-bottom: 40px;
     }
@@ -32,9 +32,9 @@
               "pic-4 pic-4 pic-6"
               "pic-7 pic-9 pic-9"
               "pic-8 pic-9 pic-9"
-              "pic-10 pic-11 pic-12"
-              "pic-13 pic-13 pic-14"
-              "pic-13 pic-13 pic-15";
+              "pic-10 pic-11 pic-12";
+              //"pic-13 pic-13 pic-14"
+              //"pic-13 pic-13 pic-15";
       @include sm {
         display: flex;
         overflow-y: hidden;
@@ -47,9 +47,14 @@
 
       li {
         @include sm {
-          margin-right: 10px;
+          margin-right: 20px;
           width: 300px;
           height: 220px;
+          max-height: 220px;
+          max-width: 300px;
+          min-height: 220px;
+          min-width: 300px;
+          display: inline-block;
         }
       }
     }
@@ -58,6 +63,20 @@
     button {
       @include blue_button;
       border: 1px solid #52d1e0;
+    }
+    a {
+      @include blue_button;
+      border: 1px solid #52d1e0;
+      color: black!important;
+      background-color: #52d1e0!important;
+    }
+  }
+  &_link {
+    a {
+      @include blue_button;
+      border: 1px solid #52d1e0;
+      color: black!important;
+      background-color: #52d1e0!important;
     }
   }
 }

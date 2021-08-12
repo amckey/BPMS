@@ -3,7 +3,7 @@ import styles from './WhyUs.module.scss';
 import {whyUs} from "../../fixtures/data";
 import {useMediaQuery} from 'react-responsive';
 
-const WhyUs = () => {
+const WhyUs = ({whyUsRef}) => {
     const isMobile = useMediaQuery({maxWidth: 767});
     const whyUsItems = whyUs.map((item, index) => {
         return (
@@ -20,7 +20,7 @@ const WhyUs = () => {
     })
     return (
         <div className={styles.whyUs}>
-            <div className={styles.whyUs_container}>
+            <div className={styles.whyUs_container} ref={whyUsRef}>
                 <h2>Почему мы?</h2>
                 <div className={styles.whyUs_list}>
                     <ul>

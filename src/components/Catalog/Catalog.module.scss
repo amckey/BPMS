@@ -94,6 +94,8 @@
         h3 {
           font-size: 18px;
           margin-bottom: 20px;
+          line-height: 25px;
+          height: 35px;
         }
         .menu_text {
           p {
@@ -106,7 +108,7 @@
           }
         }
         .menu_button {
-          button {
+          button, a {
             @include blue_button;
             border: 1px solid #52d1e0;
           }
@@ -127,7 +129,7 @@
   }
   &_img {
     width: 650px;
-    height: 450px;
+    height: 540px;
     img {
       max-width: 650px;
       width: 100%;
@@ -203,14 +205,15 @@
       font-size: 18px;
       font-weight: bold;
       line-height: 25px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       @include sm {
         font-size: 14px;
       }
     }
-    button {
+    button, a {
       @include blue_button;
       border: 1px solid #52d1e0;
+      color: black!important;
     }
   }
 }

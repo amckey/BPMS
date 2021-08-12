@@ -5,7 +5,7 @@ import {advantages} from "../../fixtures/data";
 import Background from "../../assets/sea.png";
 
 
-const Advantages = () => {
+const Advantages = ({advantagesRef}) => {
     // const isMobile = useMediaQuery({maxWidth: 767});
     const advantagesItems = advantages.map((item, index) => {
         return (
@@ -24,7 +24,7 @@ const Advantages = () => {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover'
         }}>
-            <div className={styles.advantages_container}>
+            <div className={styles.advantages_container} ref={advantagesRef}>
                 <h2>Наши преимущества</h2>
                  <div className={styles.advantages_list}>
                     <ul>

@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Footer.module.scss';
 import {contacts} from "../../fixtures/data";
 import Logo from '../../assets/big_logo.svg';
-import Twitter from '../../assets/twitter.svg';
 import Facebook from '../../assets/facebook.svg';
 import Instagram from '../../assets/instagram.svg';
 import Youtube from '../../assets/youtube.svg';
@@ -16,7 +15,7 @@ const Footer = () => {
         return (
                 <li>
                     <div className={styles.contacts_cart}>
-                        <h4>Representative office</h4>
+                        <h4>{item.contacts}</h4>
                         <div className={styles.contacts_details}>
                             <div className={styles.contacts_item}>
                                 <img src={Location} alt="location"/>
@@ -51,10 +50,9 @@ const Footer = () => {
                             <img src={Logo} alt="logo"/>
                         </div>
                         <div className={styles.footer_socials}>
-                            <img src={Twitter} alt="twitter"/>
-                            <img src={Facebook} alt="facebook"/>
-                            <img src={Instagram} alt="instagram"/>
-                            <img src={Youtube} alt="youtube"/>
+                            <a href="https://www.facebook.com/almarcraft/" target="_blank" rel="noreferrer"><img src={Facebook} alt="facebook"/></a>
+                            <a href="https://instagram.com/balticpmservice" target="_blank" rel="noreferrer" ><img src={Instagram} alt="instagram"/></a>
+                            <a href="https://www.youtube.com/channel/UCm83nxYg89e1-jymrBW3Qfw" target="_blank" rel="noreferrer" ><img src={Youtube} alt="youtube"/></a>
                         </div>
                     </div>
                     <div className={styles.footer_contacts}>
@@ -74,7 +72,7 @@ const Footer = () => {
                             </div>
                     </div>
                     <div className={styles.footer_developers}>
-                        <p>Разработка сайта: <span>Webbynavia</span></p>
+                        <p>Разработка сайта: <span><a href="https://webbynavia.no">webbynavia.no</a></span></p>
                     </div>
                 </div>
             </div>

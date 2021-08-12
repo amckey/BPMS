@@ -4,7 +4,7 @@ import {reviews} from "../../fixtures/data";
 import Background from "../../assets/sea.png";
 import Star from '../../assets/star.svg';
 
-const Reviews = () => {
+const Reviews = ({reviewsRef}) => {
     const reviewsItems = reviews.map((item, index) => {
         return (
             <li key={index}>
@@ -43,7 +43,7 @@ const Reviews = () => {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover'
         }}>
-            <div className={styles.reviews_container}>
+            <div className={styles.reviews_container} ref={reviewsRef}>
                 <h2>Отзывы</h2>
                 <div className={styles.reviews_list}>
                     <ul>

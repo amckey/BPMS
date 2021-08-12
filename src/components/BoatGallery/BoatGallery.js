@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
 import styles from './BoatGallery.module.scss';
 import {readyModels} from "../../fixtures/data";
 import {useMediaQuery} from "react-responsive";
 
-const BoatGallery = () => {
-    const item = readyModels[0];
+const BoatGallery = ({item}) => {
     const isMobile = useMediaQuery({maxWidth: 767});
-    const pictures = item.pictures.map((item, index) => {
+    const [readyModelsState, setReadyModelsState] = useState(null);
+    useEffect(() => {
+        if(item) {
+            setReadyModelsState(item)
+        }
+    }, [item])
+    const pictures = readyModelsState && readyModelsState.pictures.map((item, index) => {
         const classNames = `pic-${index + 1}`;
         if(!isMobile) {
             return (
@@ -31,7 +37,7 @@ const BoatGallery = () => {
                     </ul>
                 </div>
                 <div className={styles.gallery_button}>
-                    <button>Получить предложение</button>
+                    <Link to="/contacts" replace className={styles.gallery_link}>Получить предложение</Link>
                 </div>
             </div>
         </div>

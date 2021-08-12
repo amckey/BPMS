@@ -41,7 +41,7 @@
   }
   li {
     width: 540px;
-    min-height: 230px;
+    min-height: 180px;
     @include sm {
       width: 100%;
       min-height: 300px;
@@ -52,6 +52,7 @@
     background-color: rgba(#000, .7);
     padding: 10px;
     border-radius: 4px;
+    height: 100%;
   }
   &_heading {
     display: flex;

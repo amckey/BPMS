@@ -1,10 +1,13 @@
 import React from 'react';
 import {useMediaQuery} from 'react-responsive';
+// import {push} from "connected-react-router";
+// import {useDispatch} from "react-redux";
+import {Link} from 'react-router-dom';
 import styles from './Catalog.module.scss';
 import {readyModels, futureModels} from "../../fixtures/data";
 import Draft from '../../assets/draft.jpg';
 
-const Catalog = () => {
+const Catalog = ({catalogRef}) => {
     const isMobile = useMediaQuery({maxWidth: 767});
     const individual = [
         {
@@ -50,12 +53,13 @@ const Catalog = () => {
                     <div className={styles.menu_info}>
                         <h3>{item.main.title}</h3>
                         <div className={styles.menu_text}>
-                            <p>Metal: {item.main.metal}</p>
-                            <p>Motor: {item.main.motor}</p>
-                            <p>Fuel tank: {item.main.fuelTank}</p>
+                            {item.main.metal && <p>Metal: {item.main.metal}</p>}
+                            {item.main.motor && <p>Motor: {item.main.motor}</p>}
+                            {item.main.fuelTank && <p>Fuel tank: {item.main.fuelTank}</p>}
                         </div>
                         <div className={styles.menu_button}>
-                            <button>Просмотреть</button>
+                            {/*<button onClick={() => push(`/boats/${item.main.short_link}`)}>Просмотреть</button>*/}
+                            <Link to={`/boats/${item.main.short_link}`}>Просмотреть</Link>
                         </div>
                     </div>
                 </div>
@@ -68,17 +72,17 @@ const Catalog = () => {
             <li key={index}>
                 <div className={styles.menu_item}>
                     <div className={styles.menu_image}>
-                        <img src={item.picture} alt="boat"/>
+                        <img src={item.main.picture} alt="boat"/>
                     </div>
                     <div className={styles.menu_info}>
-                        <h3>{item.title}</h3>
+                        <h3>{item.main.title}</h3>
                         <div className={styles.menu_text}>
-                            <p>Metal: {item.metal}</p>
-                            <p>Motor: {item.motor}</p>
-                            <p>Fuel tank: {item.fuelTank}</p>
+                            {item.main.metal && <p>Metal: {item.main.metal}</p>}
+                            {item.main.motor && <p>Motor: {item.main.motor}</p>}
+                            {item.main.fuelTank && <p>Fuel tank: {item.main.fuelTank}</p>}
                         </div>
                         <div className={styles.menu_button}>
-                            <button>Просмотреть</button>
+                            <Link to={`/boats/${item.main.short_link}`}>Просмотреть</Link>
                         </div>
                     </div>
                 </div>
@@ -88,7 +92,7 @@ const Catalog = () => {
 
     return (
         <div className={styles.catalog}>
-            <div className={styles.catalog_container}>
+            <div className={styles.catalog_container} ref={catalogRef}>
                 <h2>Каталог</h2>
                 <div className={styles.catalog_section}>
                     <h3>Готовые модели</h3>
@@ -131,7 +135,7 @@ const Catalog = () => {
                     <div className={styles.individual_add}>
                         <p>мы гибко подходим к требованиям наших клиентов и всегда готовы найти решение в соответствии с любыми требованиями</p>
                         <div className={styles.individual_button}>
-                            <button>узнать больше</button>
+                            <Link className={styles.button} to="/learn_more" replace>узнать больше</Link>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import {useMediaQuery} from 'react-responsive';
 import styles from './Header.module.scss';
 import Logo from '../../assets/logo.svg';
@@ -12,24 +13,24 @@ const Header = () => {
     const [language, setLanguage] = useState('Русский');
     const nav = [
         {
-            title: 'Link',
-            to: '/'
+            title: 'Каталог',
+            to: '/catalogue',
         },
         {
-            title: 'Link',
-            to: '/'
+            title: 'Преимущества',
+            to: '/advantages',
         },
         {
-            title: 'Link',
-            to: '/'
+            title: 'Почему мы?',
+            to: '/why_us',
         },
         {
-            title: 'Link',
-            to: '/'
+            title: 'Отзывы',
+            to: '/reviews',
         },
         {
-            title: 'Link',
-            to: '/'
+            title: 'Связаться с нами',
+            to: '/contacts',
         }
     ]
 
@@ -52,7 +53,7 @@ const Header = () => {
     
     const navList = nav.map((item, index) => {
         return (
-            <li key={index}>{item.title}</li>
+            <li key={index}><Link to={item.to} replace>{item.title}</Link></li>
         )
     })
 
@@ -76,7 +77,7 @@ const Header = () => {
                     </div>
                 </div>}
                 <div className={styles.header_logo}>
-                    <img src={Logo} alt="logo"/>
+                    <Link to="/" replace><img src={Logo} alt="logo"/></Link>
                 </div>
                 {!isMobile && <nav className={styles.header_nav}>
                     <ul>{navList}</ul>
