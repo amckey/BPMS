@@ -11,6 +11,7 @@ const BoatHero = ({item}) => {
             setReadyModelsState(item)
         }
     }, [item])
+
     return (
         <div className={styles.hero}
              style={readyModelsState && !readyModelsState.video ? {

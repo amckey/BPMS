@@ -53,7 +53,7 @@ const Header = () => {
     
     const navList = nav.map((item, index) => {
         return (
-            <li key={index}><Link to={item.to} replace>{item.title}</Link></li>
+            <li key={index}><Link to={item.to} replace onClick={() => setToggleBurger(false)}>{item.title}</Link></li>
         )
     })
 

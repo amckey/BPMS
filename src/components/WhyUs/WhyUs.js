@@ -11,7 +11,8 @@ const WhyUs = ({whyUsRef}) => {
                 <div className={styles.whyUs_item}>
                     <div className={styles.whyUs_heading}>
                         <h3>{item.title}</h3>
-                        {!isMobile && <img src={item.icon} alt="whyUs"/>}
+                        {/*{!isMobile && <img src={item.icon} alt="whyUs"/>}*/}
+                        <img src={item.icon} alt="whyUs"/>
                     </div>
                     <p>{item.desc}</p>
                 </div>

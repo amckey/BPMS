@@ -210,6 +210,8 @@ export const futureModels = [
             active: false,
             available: false
         },
+        equipment: null,
+        accessories: null,
         additional: 'По желанию заказчика устанавливается двигатель (Компоненты для двигателя можно заказать самостоятельно или отправить заказчику) и необходимые компоненты (крепление дроссельной заслонки, ключ запуска, тахометр, индикатор наклона)',
         pictures: [Alm590Cab],
         certification: false

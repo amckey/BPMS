@@ -24,7 +24,7 @@ const BoatPage = (props) => {
     return (
          <>
              <BoatHero item={boat}/>
-             {boat && boat.certification && <BoatDesc item={boat}/>}
+             <BoatDesc item={boat}/>
              <BoatGallery item={boat}/>
              <Footer/>
          </>

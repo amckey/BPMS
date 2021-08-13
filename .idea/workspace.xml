@@ -2,55 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acf73b62-542f-48f1-a8c9-6a7bfdf14d3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/Almarcraft470View1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Almarcraft470View2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Almarcraft590cab.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/BPMS 470  proposal 2  23.12.2019.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/alm590-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/alm590-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/alm590-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/alm590-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/alm590-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/alm590-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/targa1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/targa10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/targa11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/targa2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/targa3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/targa4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/targa5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/targa6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/targa7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/targa8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/targa9.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Advantages/Advantage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Advantages/Advantage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Advantages/Advantages.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Advantages/Advantages.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BoatDesc/BoatDesc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoatDesc/BoatDesc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BoatDesc/BoatDesc.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoatDesc/BoatDesc.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BoatGallery/BoatGallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoatGallery/BoatGallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BoatGallery/BoatGallery.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoatGallery/BoatGallery.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BoatHero/BoatHero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoatHero/BoatHero.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BoatHero/BoatHero.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoatHero/BoatHero.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainHero/MainHero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainHero/MainHero.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainHero/MainHero.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainHero/MainHero.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reviews/Reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/Reviews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reviews/Reviews.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/Reviews.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WhyUs/WhyUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WhyUs/WhyUs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WhyUs/WhyUs.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WhyUs/WhyUs.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fixtures/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fixtures/data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/BoatPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BoatPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +33,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1vi0lVX7aKNk87r9CYZDcENfAAQ" />
@@ -123,7 +95,7 @@
       <workItem from="1627029754873" duration="68646000" />
       <workItem from="1628065582114" duration="7218000" />
       <workItem from="1628160658346" duration="8854000" />
-      <workItem from="1628592041615" duration="26166000" />
+      <workItem from="1628592041615" duration="34612000" />
     </task>
     <servers />
   </component>
@@ -171,13 +143,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/BoatDesc/BoatDesc.js</url>
-          <line>179</line>
+          <line>184</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Header/Header.js</url>
           <line>32</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

@@ -5,13 +5,13 @@ import BoatPage from "./pages/BoatPage";
 
 const Routes = () => {
     return (
-        <>
+
             <Switch>
                 <Route path='/' exact component={Home}/>
                 <Route path='/:section' exact component={Home}/>
                 <Route path='/boats/:boat' exact component={BoatPage}/>
             </Switch>
-        </>
+
     )
 }
 

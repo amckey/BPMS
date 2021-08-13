@@ -38,7 +38,7 @@ const BoatDesc = ({item}) => {
         {title: 'Дно', value: readyModelsState.main.bottom},
         {title: 'Стенки', value: readyModelsState.main.side},
     ]
-    const equipment = readyModelsState && [
+    const equipment = readyModelsState && readyModelsState.equipment && [
         {title: 'Запираемые блоки хранения', value: readyModelsState.equipment.storageUnits},
         {title: 'Гидравлическое рулевое управление', value: readyModelsState.equipment.steering},
         {title: 'Ручной трюмный насос или электрический насос', value: readyModelsState.equipment.pump},
@@ -56,7 +56,7 @@ const BoatDesc = ({item}) => {
         {title: 'Swimming ladder', value: readyModelsState.equipment.ladder}
     ]
 
-    const accesories = readyModelsState && [
+    const accesories = readyModelsState && readyModelsState.accessories && [
         {title: 'Тарга', value: readyModelsState.accessories.targa},
         {title: '1 поворотное регулируемое сиденье', value: readyModelsState.accessories.comfortSeat},
     ]
@@ -120,8 +120,13 @@ const BoatDesc = ({item}) => {
             setReadyModelsState(newReadyModelsState);
         }
     }
-    if(!readyModelsState) {
-        return (<div>Loading</div>)
+    if(readyModelsState && !readyModelsState.certification) {
+        return <div className={styles.desc}>
+            <div className={styles.desc_container}>
+                <h3 style={{fontSize: 24, textTransform: 'uppercase'}}>Лодка в стадии разработки</h3>
+                <p className={styles.notReady}>в данный момент лодка находится в стадии разработки, технические данные и фотографии будут добавлены позже, когда лодка начнет проходить сертификацию</p>
+            </div>
+        </div>
     }
     return (
         <div className={styles.desc}>

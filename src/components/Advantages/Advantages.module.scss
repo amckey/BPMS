@@ -1,7 +1,7 @@
 @import "../../styles/mixins";
 
 .advantages {
-  min-height: 700px;
+  min-height: 600px;
   padding: 40px;
   @include sm {
     min-height: 490px;
@@ -43,8 +43,8 @@
     }
   }
   &_item {
-    width: 385px;
-    height: 400px;
+    width: 280px;
+    height: 280px;
     background-color: rgba(#000, .7);
     border-radius: 5px;
     border-top: 10px solid rgba(#52d1e0, .5);
@@ -67,22 +67,22 @@
       }
     }
     h3 {
-      font-size: 28px;
+      font-size: 18px;
       margin-bottom: 18px;
       text-transform: uppercase;
-      height: 80px;
-      line-height: 40px;
+      height: 60px;
+      line-height: 20px;
       @include sm {
         height: 55px;
-        line-height: 35px;
+        line-height: 20px;
         margin-bottom: 24px;
-        font-size: 24px;
+        font-size: 18px;
       }
     }
     p {
-      font-size: 24px;
+      font-size: 14px;
       color: #aaaaaa;
-      line-height: 35px;
+      line-height: 20px;
       @include sm {
         font-size: 18px;
         line-height: 30px;
