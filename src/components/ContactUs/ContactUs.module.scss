@@ -45,7 +45,7 @@
   }
   &_form {
     width: 1000px;
-    @include sm {
+    @include md {
       width: 100%;
     }
     ::placeholder {

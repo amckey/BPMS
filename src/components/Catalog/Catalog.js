@@ -1,14 +1,13 @@
 import React from 'react';
 import {useMediaQuery} from 'react-responsive';
-// import {push} from "connected-react-router";
-// import {useDispatch} from "react-redux";
 import {Link} from 'react-router-dom';
 import styles from './Catalog.module.scss';
 import {readyModels, futureModels} from "../../fixtures/data";
 import Draft from '../../assets/draft.jpg';
 
 const Catalog = ({catalogRef}) => {
-    const isMobile = useMediaQuery({maxWidth: 767});
+    // const isMobile = useMediaQuery({maxWidth: 767});
+    const isTablet = useMediaQuery({maxWidth: 1023});
     const individual = [
         {
             number: '1',
@@ -115,7 +114,7 @@ const Catalog = ({catalogRef}) => {
                 <div className={styles.catalog_section_individual}>
                     <h3>Индивидуальные проекты</h3>
                     <p className={styles.catalog_desc}>наша компания занимается индивидуальными проектами, ниже представлены варианты сотрудничества с нами</p>
-                    {!isMobile ? <div className={styles.individual_content}>
+                    {!isTablet ? <div className={styles.individual_content}>
                         <div className={styles.individual_cards}>
                             <ul>{individualCards}</ul>
                         </div>

@@ -4,7 +4,7 @@
   height: 560px;
   padding: 40px 0 80px 0;
   background-color: #1d2025;
-  @include sm {
+  @include md {
     height: unset;
   }
   &_container {
@@ -15,16 +15,19 @@
     justify-content: space-between;
     align-items: top;
     margin-bottom: 40px;
-    @include sm {
+    @include md {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-bottom: 40px;
+    }
+    @include sm {
       margin-bottom: 0;
     }
   }
   &_logo {
     width: 200px;
-    @include sm {
+    @include md {
       margin-bottom: 40px;
     }
   }
@@ -52,6 +55,11 @@
   &_contacts {
     ul {
       display: flex;
+      @include md {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
       @include sm {
         margin-right: 0;
         margin-bottom: 40px;
