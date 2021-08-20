@@ -18,14 +18,14 @@ const BoatDesc = ({item}) => {
         {title: 'Ширина', value: readyModelsState.main.width},
         {title: 'Количество пассажиров', value: readyModelsState.main.passengers},
         {title: 'Двигатель', value: readyModelsState.main.engine},
-        {title: 'Водоотвод', value: readyModelsState.main.selfDraining},
+        {title: 'Дринаж', value: readyModelsState.main.selfDraining},
         {title: 'Корпус', value: readyModelsState.main.hull},
         {title: 'Удобные сиденья', value: readyModelsState.main.seats},
         {title: 'Поручни', value: readyModelsState.main.raillings},
         {title: 'Палуба', value: readyModelsState.main.deck},
         {title: 'Топливный бак', value: readyModelsState.main.fuelTank},
-        {title: 'Транец', value: readyModelsState.main.transom},
-        {title: 'Кормовой привод', value: readyModelsState.main.inboard},
+        // {title: 'Борта', value: readyModelsState.main.transom},
+        {title: 'Внутренняя конструкция', value: readyModelsState.main.inboard},
         {title: 'Общая длина', value: readyModelsState.main.totalLength},
         {title: 'Вес', value: readyModelsState.main.weight},
         {title: 'Общая грузоподъемность', value: readyModelsState.main.capacity},
@@ -35,11 +35,11 @@ const BoatDesc = ({item}) => {
         {title: 'Рулевая консоль', value: readyModelsState.main.steeringConsole},
         {title: 'Плавучесть', value: readyModelsState.main.flotation},
         {title: 'Ветровое стекло', value: readyModelsState.main.windshield},
-        {title: 'Дно', value: readyModelsState.main.bottom},
-        {title: 'Стенки', value: readyModelsState.main.side},
+        {title: 'Днище', value: readyModelsState.main.bottom},
+        {title: 'Борта', value: readyModelsState.main.side},
     ]
     const equipment = readyModelsState && readyModelsState.equipment && [
-        {title: 'Запираемые блоки хранения', value: readyModelsState.equipment.storageUnits},
+        {title: 'Закрываемые рундуки', value: readyModelsState.equipment.storageUnits},
         {title: 'Гидравлическое рулевое управление', value: readyModelsState.equipment.steering},
         {title: 'Ручной трюмный насос или электрический насос', value: readyModelsState.equipment.pump},
         {title: 'Навигационные огни', value: readyModelsState.equipment.lights},
@@ -49,16 +49,16 @@ const BoatDesc = ({item}) => {
         {title: 'Розетка 12V', value: readyModelsState.equipment.socket},
         {title: 'Огнетушитель', value: readyModelsState.equipment.fireExtinguisher},
         {title: 'Рулевая консоль, закаленное стекло лобового стекла', value: readyModelsState.equipment.temperedGlass},
-        {title: 'Плавательная платформа', value: readyModelsState.equipment.platform},
-        {title: 'Hull painting', value: readyModelsState.equipment.hullPainting},
-        {title: 'Boat rubber fender', value: readyModelsState.equipment.fender},
-        {title: '12 V outlet', value: readyModelsState.equipment.outlet},
-        {title: 'Swimming ladder', value: readyModelsState.equipment.ladder}
+        {title: 'Площадка для плавания', value: readyModelsState.equipment.platform},
+        // {title: 'Hull painting', value: readyModelsState.equipment.hullPainting},
+        // {title: 'Boat rubber fender', value: readyModelsState.equipment.fender},
+        // {title: '12 V outlet', value: readyModelsState.equipment.outlet},
+        {title: 'Лестница для плавания', value: readyModelsState.equipment.ladder}
     ]
 
     const accesories = readyModelsState && readyModelsState.accessories && [
         {title: 'Тарга', value: readyModelsState.accessories.targa},
-        {title: '1 поворотное регулируемое сиденье', value: readyModelsState.accessories.comfortSeat},
+        // {title: '1 поворотное регулируемое сиденье', value: readyModelsState.accessories.comfortSeat},
     ]
 
     const techDetailsList = techDetails && techDetails.map((item, index) => {
