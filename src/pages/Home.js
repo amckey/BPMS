@@ -14,11 +14,13 @@ const Home = (props) => {
     const whyUsRef = useRef(null);
     const reviewsRef = useRef(null);
     const contactRef = useRef(null);
-    const scrollTo = (ref) => ref.current.scrollIntoView();
+    const scrollTo = (ref) => ref.current.scrollIntoView({
+        behavior: "smooth"
+    });
     const goTop = () => {
         window.scrollTo({
             top: 0,
-            behavior: "smooth",
+            behavior: "auto",
         });
     };
     const scroll = () => {

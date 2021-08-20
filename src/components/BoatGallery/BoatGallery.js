@@ -16,13 +16,13 @@ const BoatGallery = ({item}) => {
         const classNames = `pic-${index + 1}`;
         if(!isMobile) {
             return (
-                <li className={classNames} style={{gridArea: `pic-${index + 1}`}}>
+                <li className={classNames} style={{gridArea: `pic-${index + 1}`}} key={index}>
                     <img src={item} alt="boat"/>
                 </li>
             )
         }
         return (
-            <li className={styles.mobile_img}>
+            <li className={styles.mobile_img} key={index}>
                 <img src={item} alt="boat"/>
             </li>
         )

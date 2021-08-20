@@ -2,16 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acf73b62-542f-48f1-a8c9-6a7bfdf14d3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/certified.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/funkcionalnost.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/nadezhnost.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/universalnost.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Advantages/Advantages.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Advantages/Advantages.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BoatDesc/BoatDesc.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoatDesc/BoatDesc.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BoatGallery/BoatGallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoatGallery/BoatGallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BoatHero/BoatHero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoatHero/BoatHero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BoatHero/BoatHero.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoatHero/BoatHero.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reviews/Reviews.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/Reviews.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainHero/MainHero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainHero/MainHero.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WhyUs/WhyUs.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WhyUs/WhyUs.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fixtures/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fixtures/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BoatPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BoatPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_globals.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +103,8 @@
       <workItem from="1627029754873" duration="68646000" />
       <workItem from="1628065582114" duration="7218000" />
       <workItem from="1628160658346" duration="8854000" />
-      <workItem from="1628592041615" duration="37228000" />
+      <workItem from="1628592041615" duration="37654000" />
+      <workItem from="1629384200236" duration="6339000" />
     </task>
     <servers />
   </component>
@@ -142,7 +157,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Header/Header.js</url>
-          <line>32</line>
+          <line>35</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

@@ -6,11 +6,17 @@ import Header from "../Header/Header";
 
 const BoatHero = ({item}) => {
     const [readyModelsState, setReadyModelsState] = useState(null);
+    const [loading, setLoading] = useState(true);
     useEffect(() => {
         if(item) {
             setReadyModelsState(item)
         }
-    }, [item])
+    }, [item, loading])
+    const handleLoad = () => {
+        setLoading(false);
+        console.log('loaded');
+        console.log(loading);
+    }
 
     return (
         <div className={styles.hero}
@@ -18,10 +24,10 @@ const BoatHero = ({item}) => {
                  backgroundImage: `url(${readyModelsState && readyModelsState.main.picture})`,
                  backgroundRepeat: 'no-repeat',
                  backgroundSize: 'cover'
-             } : undefined}>
+             } : undefined} >
             <Header/>
             {readyModelsState && readyModelsState.video ?
-                <video autoPlay loop muted className={styles.video} playsInline src={readyModelsState && readyModelsState.video}>
+                <video autoPlay loop muted className={styles.video} playsInline src={readyModelsState && readyModelsState.video} onLoadedData={handleLoad}>
                 <source src={readyModelsState && readyModelsState.video} type="video/mp4"/>
             </video> : null}
             <div className={styles.hero_container}>

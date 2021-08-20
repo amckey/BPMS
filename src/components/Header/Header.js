@@ -5,12 +5,15 @@ import styles from './Header.module.scss';
 import Logo from '../../assets/logo.svg';
 import Arrow from '../../assets/arrow.svg';
 import Burger from '../../assets/burger.svg';
+import i18n from '../../fixtures/i18next';
+import {useTranslation} from 'react-i18next';
 
 const Header = () => {
     const isMobile = useMediaQuery({maxWidth: 767});
     const [toggleLanguages,setToggleLanguages] = useState(false);
     const [toggleBurger, setToggleBurger] = useState(false);
     const [language, setLanguage] = useState('Русский');
+    const {i18n} = useTranslation();
     const nav = [
         {
             title: 'Каталог',
@@ -35,17 +38,19 @@ const Header = () => {
     ]
 
     const languages = [
-        {language: 'Русский'},
-        {language: 'Latviski'},
-        {language: 'English'}
+        {language: 'Русский', lng: 'ru'},
+        {language: 'Latviski', lng: 'lv'},
+        {language: 'English', lng: 'en'}
     ]
-    const handleLanguage = (language) => {
+    const handleLanguage = (language, lng) => {
         setLanguage(language);
+        i18n.changeLanguage(lng);
+        console.log(lng);
     }
 
     const languageItems = languages.map((item, index) => {
         return (
-            <li onClick={() => handleLanguage(item.language)}>
+            <li onClick={() => handleLanguage(item.language, item.lng)}>
                 {item.language}
             </li>
         )

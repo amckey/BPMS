@@ -7,10 +7,7 @@ import {futureModels, readyModels} from "../fixtures/data";
 
 const BoatPage = (props) => {
     const goTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
+        window.scrollTo(0,0);
     };
     useEffect(() => {
         goTop();
@@ -21,13 +18,14 @@ const BoatPage = (props) => {
         const boatFilter = arrayOfBoats.filter(item => item.main.short_link === props.match.params.boat);
         setBoat(boatFilter[0]);
     },[])
+
     return (
-         <>
+         <div style={{scrollBehavior: 'smooth'}}>
              <BoatHero item={boat}/>
              <BoatDesc item={boat}/>
              <BoatGallery item={boat}/>
              <Footer/>
-         </>
+         </div>
     )
 }
 
