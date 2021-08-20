@@ -124,7 +124,7 @@ const BoatDesc = ({item}) => {
         return <div className={styles.desc}>
             <div className={styles.desc_container}>
                 <h3 style={{fontSize: 24, textTransform: 'uppercase'}}>Лодка в стадии разработки</h3>
-                <p className={styles.notReady}>в данный момент лодка находится в стадии разработки, технические данные и фотографии будут добавлены позже, когда лодка начнет проходить сертификацию</p>
+                <p className={styles.notReady}>В данный момент лодка находится в стадии разработки, технические данные и фотографии будут добавлены позже, когда лодка начнет проходить сертификацию</p>
             </div>
         </div>
     }
@@ -136,9 +136,9 @@ const BoatDesc = ({item}) => {
                         {readyModelsState && !readyModelsState.main.available &&
                         <div className={styles.desc_banner}>
                             <p>
-                                Be informed that this model is still at the certification stage and will be available very soon. For more information, contact us to get details.
+                                Обращаем внимание, что эта модель все еще находится на стадии сертификации и очень скоро будет доступна для покупки. Чтобы получить более подробную информацию, свяжитесь с нами.        
                             </p>
-                            <Link to='/contacts' replace>Contact us</Link>
+                            <Link to='/contacts' replace>Связаться с нами</Link>
                         </div>}
                         <h3>{readyModelsState && readyModelsState.main.title}</h3>
                         <p>{readyModelsState && readyModelsState.additional}</p>
