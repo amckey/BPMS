@@ -52,9 +52,9 @@ const Catalog = ({catalogRef}) => {
                     <div className={styles.menu_info}>
                         <h3>{item.main.title}</h3>
                         <div className={styles.menu_text}>
-                            {item.main.metal && <p>Metal: {item.main.metal}</p>}
-                            {item.main.motor && <p>Motor: {item.main.motor}</p>}
-                            {item.main.fuelTank && <p>Fuel tank: {item.main.fuelTank}</p>}
+                            {item.main.metal && <p>Метал: {item.main.metal}</p>}
+                            {item.main.motor && <p>Мотор: {item.main.motor}</p>}
+                            {item.main.fuelTank && <p>Топл. бак: {item.main.fuelTank}</p>}
                         </div>
                         <div className={styles.menu_button}>
                             {/*<button onClick={() => push(`/boats/${item.main.short_link}`)}>Просмотреть</button>*/}
@@ -76,9 +76,9 @@ const Catalog = ({catalogRef}) => {
                     <div className={styles.menu_info}>
                         <h3>{item.main.title}</h3>
                         <div className={styles.menu_text}>
-                            {item.main.metal && <p>Metal: {item.main.metal}</p>}
-                            {item.main.motor && <p>Motor: {item.main.motor}</p>}
-                            {item.main.fuelTank && <p>Fuel tank: {item.main.fuelTank}</p>}
+                            {item.main.metal && <p>Метал: {item.main.metal}</p>}
+                            {item.main.motor && <p>Мотор: {item.main.motor}</p>}
+                            {item.main.fuelTank && <p>Топл. бак: {item.main.fuelTank}</p>}
                         </div>
                         <div className={styles.menu_button}>
                             <Link to={`/boats/${item.main.short_link}`}>Просмотреть</Link>
