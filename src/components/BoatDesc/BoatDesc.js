@@ -4,8 +4,11 @@ import styles from './BoatDesc.module.scss';
 import {useMediaQuery} from "react-responsive";
 import arrow from '../../assets/small_arrow.svg';
 import {Link} from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
+import i18next from 'i18next';
 
 const BoatDesc = ({item}) => {
+    const {t} = useTranslation();
     const isMobile = useMediaQuery({maxWidth: 767});
     const [readyModelsState, setReadyModelsState] = useState(null);
     useEffect(() => {
@@ -39,7 +42,7 @@ const BoatDesc = ({item}) => {
         {title: 'Борта', value: readyModelsState.main.side},
     ]
     const equipment = readyModelsState && readyModelsState.equipment && [
-        {title: 'Закрываемые рундуки', value: readyModelsState.equipment.storageUnits},
+        {title: 'Закрываемые рундуки', value: readyModelsState.equipment.storageUnits && i18next.t('yes')},
         {title: 'Гидравлическое рулевое управление', value: readyModelsState.equipment.steering},
         {title: 'Ручной трюмный насос или электрический насос', value: readyModelsState.equipment.pump},
         {title: 'Навигационные огни', value: readyModelsState.equipment.lights},

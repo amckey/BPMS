@@ -3,6 +3,9 @@
 .hero {
   height: 100vh;
   position: relative;
+  @include sm {
+    height: 60vh;
+  }
   .video {
     top: 0;
     position: fixed;
@@ -58,7 +61,7 @@
     width: 100%;
     z-index: 0;
     //background: linear-gradient( transparent 0%, #1d2025 100%);
-    background: rgba(#1d2025, .2);
+    background: rgba(#1d2025, 0.2);
     @include sm {
       height: 100vh;
     }
@@ -71,9 +74,9 @@
     right: 0;
     height: 250px;
     z-index: 1;
-    background: linear-gradient( transparent 0%, #1d2025 100%);
+    background: linear-gradient(transparent 0%, #1d2025 100%);
     @include sm {
-      height: 130px;
+      height: 100px;
     }
   }
 }

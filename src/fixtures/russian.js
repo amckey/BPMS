@@ -1,6 +1,6 @@
 let ru = {
   translation: {
-    "yes": "да"
+    "yes": "Да"
   }
 };
 

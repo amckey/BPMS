@@ -1,6 +1,6 @@
 let lv = {
   translation: {
-    "yes": "jā"
+    "yes": "Jā"
   }
 };
 

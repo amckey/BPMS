@@ -1,6 +1,6 @@
 let en = {
   translation: {
-    yes:  "yees"
+    yes:  "Yes"
   }
 };
 

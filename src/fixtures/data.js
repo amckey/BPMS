@@ -124,7 +124,7 @@ export const readyModels = [
             available: true
         },
         equipment: {
-            storageUnits: i18n.t('Да'),
+            storageUnits: i18n.t('yes'),
             steering: 'Да',
             pump: 'Да',
             lights: 'Да',
@@ -242,7 +242,7 @@ export const futureModels = [
             bottom: '5',
             side: '4',
             active: false,
-            available: true
+            available: false
         },
         equipment: {
             storageUnits: i18n.t('Да'),
