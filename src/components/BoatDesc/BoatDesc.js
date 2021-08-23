@@ -21,7 +21,7 @@ const BoatDesc = ({item}) => {
         {title: 'Ширина', value: readyModelsState.main.width},
         {title: 'Количество пассажиров', value: readyModelsState.main.passengers},
         {title: 'Двигатель', value: readyModelsState.main.engine},
-        {title: 'Дринаж', value: readyModelsState.main.selfDraining},
+        {title: 'Дренаж', value: readyModelsState.main.selfDraining},
         {title: 'Корпус', value: readyModelsState.main.hull},
         {title: 'Удобные сиденья', value: readyModelsState.main.seats},
         {title: 'Поручни', value: readyModelsState.main.raillings},
