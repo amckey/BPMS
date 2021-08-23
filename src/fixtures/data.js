@@ -59,8 +59,8 @@ export const readyModels = [
             steeringConsole: 'Алюминий',
             flotation: 'Airtank 4pcs',
             windshield: 'Поликарбонатный монолит',
-            bottom: '5',
-            side: '4',
+            bottom: '5мм',
+            side: '4мм',
             active: false,
             available: true
         },
@@ -118,8 +118,8 @@ export const readyModels = [
             steeringConsole: 'Алюминий',
             flotation: 'Airtank 4pcs',
             windshield: 'Поликарбонатный монолит',
-            bottom: '5',
-            side: '4',
+            bottom: '5мм',
+            side: '4мм',
             active: false,
             available: true
         },
@@ -177,8 +177,8 @@ export const readyModels = [
     //         steeringConsole: 'Алюминий',
     //         flotation: 'Airtank 4pcs',
     //         windshield: 'Policarbonat monolit',
-    //         bottom: '5',
-    //         side: '4',
+    //         bottom: '5мм',
+    //         side: '4мм',
     //         active: false,
     //         available: true
     //     },
@@ -239,8 +239,8 @@ export const futureModels = [
             steeringConsole: 'Алюминий',
             flotation: 'Airtank 4pcs',
             windshield: 'Поликарбонатный монолит',
-            bottom: '5',
-            side: '4',
+            bottom: '5мм',
+            side: '4мм',
             active: false,
             available: false
         },
