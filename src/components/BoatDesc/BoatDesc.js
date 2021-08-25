@@ -21,7 +21,7 @@ const BoatDesc = ({item}) => {
         {title: 'Ширина', value: readyModelsState.main.width},
         {title: 'Количество пассажиров', value: readyModelsState.main.passengers},
         {title: 'Двигатель', value: readyModelsState.main.engine},
-        {title: 'Дринаж', value: readyModelsState.main.selfDraining},
+        {title: 'Дренаж', value: readyModelsState.main.selfDraining},
         {title: 'Корпус', value: readyModelsState.main.hull},
         {title: 'Удобные сиденья', value: readyModelsState.main.seats},
         {title: 'Поручни', value: readyModelsState.main.raillings},
@@ -51,7 +51,7 @@ const BoatDesc = ({item}) => {
         {title: 'Лестница для плавания', value: readyModelsState.equipment.stairs},
         {title: 'Розетка 12V', value: readyModelsState.equipment.socket},
         {title: 'Огнетушитель', value: readyModelsState.equipment.fireExtinguisher},
-        {title: 'Рулевая консоль, закаленное стекло лобового стекла', value: readyModelsState.equipment.temperedGlass},
+        {title: 'Рулевая консоль, лобовое стекло из поликарбоната', value: readyModelsState.equipment.temperedGlass},
         {title: 'Площадка для плавания', value: readyModelsState.equipment.platform},
         // {title: 'Hull painting', value: readyModelsState.equipment.hullPainting},
         // {title: 'Boat rubber fender', value: readyModelsState.equipment.fender},
@@ -139,9 +139,9 @@ const BoatDesc = ({item}) => {
                         {readyModelsState && !readyModelsState.main.available &&
                         <div className={styles.desc_banner}>
                             <p>
-                                Be informed that this model is still at the certification stage and will be available very soon. For more information, contact us to get details.
+                                Обращаем внимание, что эта модель все еще находится на стадии сертификации и очень скоро будет доступна. Для получения дополнительной информации свяжитесь с нами.
                             </p>
-                            <Link to='/contacts' replace>Contact us</Link>
+                            <Link to='/contacts' replace>Связаться с нами</Link>
                         </div>}
                         <h3>{readyModelsState && readyModelsState.main.title}</h3>
                         <p>{readyModelsState && readyModelsState.additional}</p>
