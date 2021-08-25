@@ -42,7 +42,7 @@ const BoatDesc = ({item}) => {
         {title: 'Борта', value: readyModelsState.main.side},
     ]
     const equipment = readyModelsState && readyModelsState.equipment && [
-        {title: 'Закрываемые рундуки', value: readyModelsState.equipment.storageUnits && i18next.t('yes')},
+        {title: 'Закрываемые рундуки', value: readyModelsState.equipment.storageUnits === "Да" ? i18next.t('yes') : i18next.t('byRequest')},
         {title: 'Гидравлическое рулевое управление', value: readyModelsState.equipment.steering},
         {title: 'Ручной трюмный насос или электрический насос', value: readyModelsState.equipment.pump},
         {title: 'Навигационные огни', value: readyModelsState.equipment.lights},

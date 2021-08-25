@@ -1,6 +1,7 @@
 let lv = {
   translation: {
-    "yes": "Jā"
+    yes: "Jā",
+     byRequest: "Pēc pieprasījuma"
   }
 };
 

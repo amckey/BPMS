@@ -1,6 +1,7 @@
 let en = {
   translation: {
-    yes:  "Yes"
+    yes:  "Yes",
+    byRequest: "By request"
   }
 };
 
