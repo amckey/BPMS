@@ -139,9 +139,9 @@ const BoatDesc = ({item}) => {
                         {readyModelsState && !readyModelsState.main.available &&
                         <div className={styles.desc_banner}>
                             <p>
-                                Be informed that this model is still at the certification stage and will be available very soon. For more information, contact us to get details.
+                                Обращаем внимание, что эта модель все еще находится на стадии сертификации и очень скоро будет доступна. Для получения дополнительной информации свяжитесь с нами.
                             </p>
-                            <Link to='/contacts' replace>Contact us</Link>
+                            <Link to='/contacts' replace>Связаться с нами</Link>
                         </div>}
                         <h3>{readyModelsState && readyModelsState.main.title}</h3>
                         <p>{readyModelsState && readyModelsState.additional}</p>
