@@ -1,17 +1,14 @@
 import React from 'react';
 import styles from './WhyUs.module.scss';
 import {whyUs} from "../../fixtures/data";
-import {useMediaQuery} from 'react-responsive';
 
 const WhyUs = ({whyUsRef}) => {
-    const isMobile = useMediaQuery({maxWidth: 767});
     const whyUsItems = whyUs.map((item, index) => {
         return (
             <li key={index}>
                 <div className={styles.whyUs_item}>
                     <div className={styles.whyUs_heading}>
                         <h3>{item.title}</h3>
-                        {/*{!isMobile && <img src={item.icon} alt="whyUs"/>}*/}
                         <img src={item.icon} alt="whyUs"/>
                     </div>
                     <p>{item.desc}</p>

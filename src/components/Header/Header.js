@@ -5,7 +5,6 @@ import styles from './Header.module.scss';
 import Logo from '../../assets/logo.svg';
 import Arrow from '../../assets/arrow.svg';
 import Burger from '../../assets/burger.svg';
-import i18n from '../../fixtures/i18next';
 import {useTranslation} from 'react-i18next';
 
 const Header = () => {
@@ -26,11 +25,12 @@ const Header = () => {
         {
             title: 'Почему мы?',
             to: '/why_us',
-        },
-        {
-            title: 'Отзывы',
-            to: '/reviews',
-        },
+        }
+        // {
+        //     title: 'Отзывы',
+        //     to: '/reviews',
+        // }
+        ,
         {
             title: 'Связаться с нами',
             to: '/contacts',

@@ -54,7 +54,7 @@ const Home = (props) => {
         <Catalog catalogRef={catalogRef}/>
         <Advantages advantagesRef={advantagesRef}/>
         <WhyUs whyUsRef={whyUsRef}/>
-        <Reviews reviewsRef={reviewsRef}/>
+        {/* <Reviews reviewsRef={reviewsRef}/> */}
         <ContactUs contactRef={contactRef}/>
         <Footer/>
         </>

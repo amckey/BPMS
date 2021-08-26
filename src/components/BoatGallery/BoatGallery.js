@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import styles from './BoatGallery.module.scss';
-import {readyModels} from "../../fixtures/data";
 import {useMediaQuery} from "react-responsive";
 
 const BoatGallery = ({item}) => {

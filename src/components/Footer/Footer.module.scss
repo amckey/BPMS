@@ -13,7 +13,7 @@
   &_top {
     display: flex;
     justify-content: space-between;
-    align-items: top;
+    align-items: center;
     margin-bottom: 40px;
     @include md {
       flex-direction: column;
@@ -46,7 +46,7 @@
     justify-content: space-between;
     img {
       cursor: pointer;
-      transition: .3s;
+      transition: 0.3s;
       &:hover {
         transform: scale(1.1);
       }
@@ -55,11 +55,11 @@
   &_contacts {
     ul {
       display: flex;
-      @include md {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-      }
+      // @include md {
+      //   display: grid;
+      //   grid-template-columns: 1fr 1fr;
+      //   gap: 20px;
+      // }
       @include sm {
         display: flex;
         margin-right: 0;
@@ -67,12 +67,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 200px;
       }
       li {
         margin-right: 30px;
         @include sm {
           margin-bottom: 40px;
           margin-right: 0;
+          width: 100%;
         }
         &:last-of-type {
           margin-right: 0;

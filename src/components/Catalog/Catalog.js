@@ -3,7 +3,7 @@ import {useMediaQuery} from 'react-responsive';
 import {Link} from 'react-router-dom';
 import styles from './Catalog.module.scss';
 import {readyModels, futureModels} from "../../fixtures/data";
-import Draft from '../../assets/draft.jpg';
+import Draft from '../../assets/draw.jpg';
 
 const Catalog = ({catalogRef}) => {
     // const isMobile = useMediaQuery({maxWidth: 767});

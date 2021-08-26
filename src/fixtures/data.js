@@ -18,7 +18,7 @@ import Targa8 from '../assets/targa8.jpg';
 import Targa9 from '../assets/targa9.JPG';
 import Targa10 from '../assets/targa10.jpg';
 import Targa11 from '../assets/targa11.jpg';
-import BoatIcon from '../assets/boatIcon.svg';
+import TargaMain from '../assets/targaMain.jpeg';
 import Avatar from '../assets/avatar.svg';
 import BoatVideo from '../assets/videoplayback.mp4';
 import BoatIcon1 from '../assets/certified.png';
@@ -26,9 +26,6 @@ import BoatIcon2 from '../assets/nadezhnost.png';
 import BoatIcon3 from '../assets/universalnost.png';
 import BoatIcon4 from '../assets/funkcionalnost.png';
 import i18n from 'i18next';
-import {useTranslation} from 'react-i18next';
-
-
 
 export const readyModels = [
     {   main: {
@@ -80,11 +77,7 @@ export const readyModels = [
             ladder: 'По запросу',
             active: false
         },
-        accessories: {
-            comfortSeat: 'Да',
-            active: false,
-            targa: true
-        },
+        accessories: null,
         additional: 'По желанию заказчика устанавливается двигатель (Компоненты для двигателя можно заказать самостоятельно или отправить заказчику) и необходимые компоненты (крепление дроссельной заслонки, ключ запуска, тахометр, индикатор наклона)',
         pictures: [Alm590View1, Alm590View2, Alm590View4, Alm590View5, Alm590View3, Alm590View6],
         video: BoatVideo,
@@ -96,7 +89,7 @@ export const readyModels = [
             metal: 'Алюминий',
             motor: '50-115 hp',
             fuelTank: 'По запросу',
-            picture: Targa3,
+            picture: TargaMain,
             short_link: 'almarcraft590targa',
             length: '5,92',
             width: '2,22',
@@ -141,7 +134,7 @@ export const readyModels = [
         },
         accessories: {
             comfortSeat: 'Да',
-            targa: true,
+            targa: 'Да',
             active: false
         },
         additional: 'По желанию заказчика устанавливается двигатель (Компоненты для двигателя можно заказать самостоятельно или отправить заказчику) и необходимые компоненты (крепление дроссельной заслонки, ключ запуска, тахометр, индикатор наклона)',
@@ -215,14 +208,14 @@ export const futureModels = [
             title: 'Almarcraft 470',
             desc: 'Наша модель алюминиевой лодки для рыбалки и спорта - идеальный выбор для рыболовов с друзьями и семьями, которые хотят насладиться не только рыбалкой, но и заняться водными видами спорта или покататься на лыжах.',
             metal: 'Алюминий',
-            motor: '50-115 hp',
+            motor: '30-60 hp',
             fuelTank: 'По запросу',
             picture: Almacraft470View1,
             short_link: 'almarcraft470',
-            length: '5,92',
-            width: '2,22',
+            length: '4,70',
+            width: '1,80',
             passengers: '6',
-            engine: '50-115 hp',
+            engine: '30-60 hp',
             selfDraining: 'Да',
             hull: 'EN-AW 5754/5083',
             seats: 'По запросу',
@@ -230,16 +223,16 @@ export const futureModels = [
             deck: 'Алюминий',
             transom: '10',
             inboard: '4',
-            totalLength: '5,92',
-            weight: '680кг',
-            capacity: '840кг',
-            approval: 'CE/C',
+            totalLength: '4,70',
+            // weight: '680кг',
+            // capacity: '840кг',
+            approval: 'CE/C/D',
             construction: 'Да',
             seatBoxes: 'Алюминий',
             steeringConsole: 'Алюминий',
-            flotation: 'Airtank 4pcs',
+            flotation: 'Airtank',
             windshield: 'Поликарбонатный монолит',
-            bottom: '5мм',
+            bottom: '4мм',
             side: '4мм',
             active: false,
             available: false
@@ -421,17 +414,18 @@ export const contacts = [
         phone: '+371 29984546 (Pavel Pylskij)',
         email: 'bpm_s@inbox.lv',
         contacts: 'Контакты в Латвии'
-    },
-    {
-        street: 'Jaunā iela 74, LV-3401, Liepāja, Latvija',
-        phone: '+47 456 66 111 (Vlad Misko)',
-        email: 'bpm_s@inbox.lv',
-        contacts: 'Контакты в Норвегии'
-    },
-    {
-        street: `Jaunā iela 74,LV-3401, Liepāja, Latvija`,
-        phone: '+358 442550505 (Jaakko Jätinvuori)',
-        email: 'bpm_s@inbox.lv',
-        contacts: 'Контакты в Финляндии'
     }
+    // },
+    // {
+    //     street: 'Jaunā iela 74, LV-3401, Liepāja, Latvija',
+    //     phone: '+47 456 66 111 (Vlad Misko)',
+    //     email: 'bpm_s@inbox.lv',
+    //     contacts: 'Контакты в Норвегии'
+    // },
+    // {
+    //     street: `Jaunā iela 74,LV-3401, Liepāja, Latvija`,
+    //     phone: '+358 442550505 (Jaakko Jätinvuori)',
+    //     email: 'bpm_s@inbox.lv',
+    //     contacts: 'Контакты в Финляндии'
+    // }
 ]

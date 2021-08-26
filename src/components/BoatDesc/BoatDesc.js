@@ -1,14 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import styles from './BoatDesc.module.scss';
-// import {readyModels} from "../../fixtures/data";
 import {useMediaQuery} from "react-responsive";
 import arrow from '../../assets/small_arrow.svg';
 import {Link} from 'react-router-dom';
-import {useTranslation} from 'react-i18next';
+// import {useTranslation} from 'react-i18next';
 import i18next from 'i18next';
 
 const BoatDesc = ({item}) => {
-    const {t} = useTranslation();
+    // const {t} = useTranslation();
     const isMobile = useMediaQuery({maxWidth: 767});
     const [readyModelsState, setReadyModelsState] = useState(null);
     useEffect(() => {
@@ -207,7 +206,7 @@ const BoatDesc = ({item}) => {
                                 </div>
                             }
                         </div>
-                        <div className={styles.desc_table}>
+                        {accesories && <div className={styles.desc_table}>
                             {!isMobile ? <h3>Аксессуары <span>"{readyModelsState && readyModelsState.main.title}"</span></h3> :
                                 <div className={styles.desc_mobile}>
                                     <h3>Аксессуары <span>"{readyModelsState && readyModelsState.main.title}"</span></h3>
@@ -227,7 +226,7 @@ const BoatDesc = ({item}) => {
                                     </ul>
                                 </div>
                             }
-                        </div>
+                        </div>}
                     </div>
                 </div>
             </div>

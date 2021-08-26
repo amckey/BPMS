@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom';
 import styles from './MainHero.module.scss';
 import Header from "../Header/Header";
 import Background from '../../assets/alm590-4.jpg';
-import {useTranslation} from 'react-i18next';
+// import {useTranslation} from 'react-i18next';
 
 const MainHero = () => {
-    const {t} = useTranslation();
+    // const {t} = useTranslation();
     return (
         <div className={styles.hero} style={{
             backgroundImage: `url(${Background})`,
