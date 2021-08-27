@@ -185,7 +185,7 @@ export const futureModels = [
             lights: 'Да',
             hook: 'Да',
             bracket: 'Да',
-            socket: 'Да',
+            // socket: 'Да',
             fireExtinguisher: 'Да',
             temperedGlass: 'Да',
             platform: 'Да',
