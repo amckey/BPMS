@@ -52,9 +52,8 @@ const BoatDesc = ({item}) => {
         {title: 'Огнетушитель', value: readyModelsState.equipment.fireExtinguisher},
         {title: 'Рулевая консоль, лобовое стекло из поликарбоната', value: readyModelsState.equipment.temperedGlass},
         {title: 'Площадка для плавания', value: readyModelsState.equipment.platform},
-        // {title: 'Hull painting', value: readyModelsState.equipment.hullPainting},
+        {title: 'Покраска корпуса', value: readyModelsState.equipment.hullPainting},
         // {title: 'Boat rubber fender', value: readyModelsState.equipment.fender},
-        // {title: '12 V outlet', value: readyModelsState.equipment.outlet},
         {title: 'Лестница для плавания', value: readyModelsState.equipment.ladder}
     ]
 

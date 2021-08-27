@@ -17,13 +17,13 @@ const Footer = () => {
                     <div className={styles.contacts_cart}>
                         <h4>{item.contacts}</h4>
                         <div className={styles.contacts_details}>
-                            <div className={styles.contacts_item}>
+                            {item.street && <div className={styles.contacts_item}>
                                 <img src={Location} alt="location"/>
                                 <div>
                                     <p>{item.city}</p>
                                     <p>{item.street}</p>
                                 </div>
-                            </div>
+                            </div>}
                             <div className={styles.contacts_item}>
                                 <img src={Phone} alt="phone"/>
                                 <div>
