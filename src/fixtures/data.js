@@ -77,7 +77,10 @@ export const readyModels = [
             hullPainting: 'Да',
             active: false
         },
-        accessories: null,
+        accessories: {
+            active: false,
+            content: null
+        },
         additional: 'По желанию заказчика устанавливается двигатель (Компоненты для двигателя можно заказать самостоятельно или отправить заказчику) и необходимые компоненты (крепление дроссельной заслонки, ключ запуска, тахометр, индикатор наклона)',
         pictures: [Alm590View1, Alm590View2, Alm590View4, Alm590View5, Alm590View3, Alm590View6],
         video: BoatVideo,
@@ -135,7 +138,8 @@ export const readyModels = [
         accessories: {
             // comfortSeat: 'Да',
             targa: 'Да',
-            active: false
+            active: false,
+            content: true
         },
         additional: 'По желанию заказчика устанавливается двигатель (Компоненты для двигателя можно заказать самостоятельно или отправить заказчику) и необходимые компоненты (крепление дроссельной заслонки, ключ запуска, тахометр, индикатор наклона)',
         pictures: [Targa1, Targa2, Targa3, Targa4, Targa5, Targa6, Targa7, Targa8, Targa9, Targa10, Targa11],
@@ -194,7 +198,10 @@ export const futureModels = [
             hullPainting: 'Да',
             active: false
         },
-        accessories: null,
+        accessories: {
+            active: false,
+            content: null
+        },
         additional: 'По желанию заказчика устанавливается двигатель (Компоненты для двигателя можно заказать самостоятельно или отправить заказчику) и необходимые компоненты (крепление дроссельной заслонки, ключ запуска, тахометр, индикатор наклона)',
         pictures: [Almacraft470View1, Almacraft470View2],
         video: null,

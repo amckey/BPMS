@@ -59,7 +59,6 @@ const BoatDesc = ({item}) => {
 
     const accesories = readyModelsState && readyModelsState.accessories && [
         {title: 'Тарга', value: readyModelsState.accessories.targa},
-        // {title: '1 поворотное регулируемое сиденье', value: readyModelsState.accessories.comfortSeat},
     ]
 
     const techDetailsList = techDetails && techDetails.map((item, index) => {
@@ -205,7 +204,7 @@ const BoatDesc = ({item}) => {
                                 </div>
                             }
                         </div>
-                        {accesories && <div className={styles.desc_table}>
+                        {accesories && readyModelsState && readyModelsState.accessories.content && <div className={styles.desc_table}>
                             {!isMobile ? <h3>Аксессуары <span>"{readyModelsState && readyModelsState.main.title}"</span></h3> :
                                 <div className={styles.desc_mobile}>
                                     <h3>Аксессуары <span>"{readyModelsState && readyModelsState.main.title}"</span></h3>
