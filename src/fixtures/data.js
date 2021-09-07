@@ -7,9 +7,6 @@ import Alm590View4 from '../assets/alm590-4.jpg';
 import Alm590View5 from '../assets/alm590-5.jpg';
 import Alm590View6 from '../assets/alm590-6.jpg';
 import Alm590Cab from '../assets/Almarcraft590cab.jpg';
-import Targa1 from '../assets/targa1.jpeg';
-import Targa2 from '../assets/targa2.jpeg';
-import Targa3 from '../assets/targa3.jpeg';
 import Targa4 from '../assets/targa4.jpg';
 import Targa5 from '../assets/targa5.jpg';
 import Targa6 from '../assets/targa6.jpg';
@@ -88,7 +85,7 @@ export const readyModels = [
     },
      {   main: {
             title: 'Almarcraft 590 с таргой',
-            desc: 'Наша модель алюминиевой лодки для рыбалки и спорта - идеальный выбор для рыболовов с друзьями и семьями, которые хотят насладиться не только рыбалкой, но и заняться водными видами спорта или покататься на лыжах.',
+            desc: 'Оснащение, отделка и детали делают каждую лодку Almarcraft уникальной, но прочный корпус остается неизменным. Сферы применения многочисленны, и мы производим не только прогулочные и рыбацкие лодки, но и лодки профессионального использования.',
             metal: 'Алюминий',
             motor: '50-115 hp',
             fuelTank: 'По запросу',
@@ -136,13 +133,12 @@ export const readyModels = [
             active: false
         },
         accessories: {
-            // comfortSeat: 'Да',
             targa: 'Да',
             active: false,
             content: true
         },
         additional: 'По желанию заказчика устанавливается двигатель (компоненты для двигателя можно заказать самостоятельно или отправить заказчику) и необходимые компоненты (крепление дроссельной заслонки, ключ запуска, тахометр, индикатор наклона)',
-        pictures: [Targa1, Targa2, Targa3, Targa4, Targa5, Targa6, Targa7, Targa8, Targa9, Targa10, Targa11],
+        pictures: [Targa4, Targa5, Targa6, Targa7, Targa8, Targa9, Targa10, Targa11],
         video: null,
         certification: true
     }
@@ -151,26 +147,22 @@ export const readyModels = [
 export const futureModels = [
     {   main: {
             title: 'Almarcraft 470',
-            desc: 'Наша модель алюминиевой лодки для рыбалки и спорта - идеальный выбор для рыболовов с друзьями и семьями, которые хотят насладиться не только рыбалкой, но и заняться водными видами спорта или покататься на лыжах.',
+            desc: 'Лодка Almarcraft 470 отлично подойдёт как для рыбалки, так и для семейного отдыха. Можно использовать не только на открытой воде, но и во внутренних водах. В данный момент проходит процесс сертификации.',
             metal: 'Алюминий',
             motor: '30-60 hp',
             fuelTank: 'По запросу',
             picture: Almacraft470View1,
             short_link: 'almarcraft470',
             length: '4,70',
-            width: '1,80',
-            // passengers: '6',
+            width: '1,90',
             engine: '30-60 hp',
             selfDraining: 'Да',
             hull: 'EN-AW 5754/5083',
-            // seats: 'По запросу',
             raillings: 'Алюминий',
             deck: 'Алюминий',
             transom: '10',
             inboard: '4мм',
             totalLength: '4,70',
-            // weight: '680кг',
-            // capacity: '840кг',
             approval: 'CE/C/D',
             construction: 'Да',
             seatBoxes: 'Алюминий',
@@ -189,7 +181,6 @@ export const futureModels = [
             lights: 'Да',
             hook: 'Да',
             bracket: 'Да',
-            // socket: 'Да',
             fireExtinguisher: 'Да',
             temperedGlass: 'Да',
             platform: 'Да',
@@ -250,7 +241,7 @@ export const advantages = [
 export const whyUs = [
     {
         title: 'Сертификации',
-        desc: 'Все модели лодок, которые производит наша компания, без исключения, имеют сертификат качества и ce/e маркировку.',
+        desc: 'Все модели лодок, которые производит наша компания, без исключения, имеют сертификат качества и CE/E маркировку.',
         icon: BoatIcon1
         },
         {
