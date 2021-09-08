@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.scss';
-import {contacts} from "../../fixtures/data";
+import i18next from '../../fixtures/i18next';
+import {useTranslation} from 'react-i18next';
 import Logo from '../../assets/big_logo.svg';
 import Facebook from '../../assets/facebook.svg';
 import Instagram from '../../assets/instagram.svg';
@@ -11,9 +12,30 @@ import Letter from '../../assets/letter.svg';
 import Agency from '../../assets/EAIC.svg';
 
 const Footer = () => {
+    const {t} = useTranslation();
+    const contacts = [
+    {
+        street: 'Jaunā iela 74, LV-3401, Liepāja, Latvija',
+        phone: '+371 29984546 (Pavel Pylskij)',
+        email: 'bpm_s@inbox.lv',
+        contacts: i18next.t('contactsInLatvia')
+    },
+    {
+        // street: 'Jaunā iela 74, LV-3401, Liepāja, Latvija',
+        phone: '+47 456 66 111 (Vlad Misko)',
+        email: 'bpm_s@inbox.lv',
+        contacts: i18next.t('contactsInNorway')
+    },
+    {
+        // street: `Jaunā iela 74,LV-3401, Liepāja, Latvija`,
+        phone: '+358 442550505 (Jaakko Jätinvuori)',
+        email: 'bpm_s@inbox.lv',
+        contacts: i18next.t('contactsInFinland')
+    }
+]
     const contactItems = contacts.map((item, index) => {
         return (
-                <li>
+                <li key={index}>
                     <div className={styles.contacts_cart}>
                         <h4>{item.contacts}</h4>
                         <div className={styles.contacts_details}>
@@ -72,7 +94,7 @@ const Footer = () => {
                             </div>
                     </div>
                     <div className={styles.footer_developers}>
-                        <p>Разработка сайта: <span><a href="https://webbynavia.no">webbynavia.no</a></span></p>
+                        <p>{i18next.t('webDevelopment')}: <span><a href="https://webbynavia.no">webbynavia.no</a></span></p>
                     </div>
                 </div>
             </div>

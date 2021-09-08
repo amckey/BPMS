@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import styles from './ContactUs.module.scss';
 import {useMediaQuery} from 'react-responsive';
-// import MessageModal from "../MessageModal/MessageModal";
+import i18next from '../../fixtures/i18next';
+import {useTranslation} from 'react-i18next';
 import Cross from "../../assets/cross.svg";
 import Tick from "../../assets/tick.svg";
 
 const ContactUs = ({contactRef}) => {
+    const {t} = useTranslation();
     const isMobile = useMediaQuery({maxWidth: 767});
     const [toggleModal, setToggleModal] = useState(false);
     const [form, setForm] = useState({
@@ -38,12 +40,12 @@ const ContactUs = ({contactRef}) => {
                     <div className={styles.modal_cross}>
                         <img src={Cross} alt="cross" onClick={() => setToggleModal(false)}/>
                     </div>
-                    <h3>Сообщение отправлено!</h3>
+                    <h3>{i18next.t('messageSent')}</h3>
                     <div className={styles.modal_img}>
                         <img src={Tick} alt="tick"/>
                     </div>
                     <p>
-                        Мы получили ваше сообщение и свяжемся с вами в течение следующих 24 часов!
+                        {i18next.t('messageReceived')}
                     </p>
                     <div className={styles.modal_button}>
                         <button onClick={() => setToggleModal(false)}>OK</button>
@@ -51,7 +53,7 @@ const ContactUs = ({contactRef}) => {
                 </div>
             </div>}
             <div className={styles.contact_container} ref={contactRef}>
-                <h2>Связаться с нами</h2>
+                <h2>{i18next.t('contactUs')}</h2>
                 <div className={styles.contact_form}>
                     <iframe
                     title="form"
@@ -66,23 +68,23 @@ const ContactUs = ({contactRef}) => {
                         target="hidden_iframe"
                         onSubmit={handleSubmit}>
                         {!isMobile ? <div className={styles.form_name}>
-                            <input name="entry.990647386" type="text" id="name" placeholder="Имя" className={styles.form_input} required value={form.name} onChange={handleTextField}/>
-                            <input name="entry.2005620554" type="text" id="surname" placeholder="Фамилия" className={styles.form_input} required value={form.surname} onChange={handleTextField}/>
+                            <input name="entry.990647386" type="text" id="name" placeholder={i18next.t('name')} className={styles.form_input} required value={form.name} onChange={handleTextField}/>
+                            <input name="entry.2005620554" type="text" id="surname" placeholder={i18next.t('surname')} className={styles.form_input} required value={form.surname} onChange={handleTextField}/>
                         </div> :
                             <><div className={styles.form_name}>
-                                <input name="entry.990647386" type="text" id="name" placeholder="Имя" className={styles.form_input} required value={form.name} onChange={handleTextField}/>
+                                <input name="entry.990647386" type="text" id="name" placeholder={i18next.t('name')} className={styles.form_input} required value={form.name} onChange={handleTextField}/>
                             </div>
                             <div className={styles.form_name}>
-                                <input name="entry.2005620554" type="text" id="surname" placeholder="Фамилия" className={styles.form_input} required value={form.surname} onChange={handleTextField}/>
+                                <input name="entry.2005620554" type="text" id="surname" placeholder={i18next.t('surname')} className={styles.form_input} required value={form.surname} onChange={handleTextField}/>
                             </div></>}
                         <div className={styles.form_contact}>
-                            <input name="entry.1045781291" type="text" id="contact" placeholder="E-mail или номер телефона" className={styles.form_input} required value={form.contact} onChange={handleTextField}/>
+                            <input name="entry.1045781291" type="text" id="contact" placeholder={i18next.t('emailAndPhone')} className={styles.form_input} required value={form.contact} onChange={handleTextField}/>
                         </div>
                         <div className={styles.form_message}>
-                            <textarea name="entry.839337160" cols="30" rows="10" id="message" placeholder="Сообщение" className={styles.form_input} required value={form.message} onChange={handleTextField}></textarea>
+                            <textarea name="entry.839337160" cols="30" rows="10" id="message" placeholder={i18next.t('message')} className={styles.form_input} required value={form.message} onChange={handleTextField}></textarea>
                         </div>
                         <div className={styles.form_button}>
-                            <button type="submit">Отправить</button>
+                            <button type="submit">{i18next.t('send')}</button>
                         </div>
                     </form>
                 </div>

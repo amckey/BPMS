@@ -3,11 +3,11 @@ import styles from './BoatDesc.module.scss';
 import {useMediaQuery} from "react-responsive";
 import arrow from '../../assets/small_arrow.svg';
 import {Link} from 'react-router-dom';
-// import {useTranslation} from 'react-i18next';
-import i18next from 'i18next';
+import {useTranslation} from 'react-i18next';
+import i18next from "../../fixtures/i18next";
 
 const BoatDesc = ({item}) => {
-    // const {t} = useTranslation();
+    const {t} = useTranslation();
     const isMobile = useMediaQuery({maxWidth: 767});
     const [readyModelsState, setReadyModelsState] = useState(null);
     useEffect(() => {

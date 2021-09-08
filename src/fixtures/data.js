@@ -18,10 +18,6 @@ import Targa11 from '../assets/targa11.jpg';
 import TargaMain from '../assets/targaMain.jpeg';
 import Avatar from '../assets/avatar.svg';
 import BoatVideo from '../assets/videoplayback.mp4';
-import BoatIcon1 from '../assets/certified.png';
-import BoatIcon2 from '../assets/nadezhnost.png';
-import BoatIcon3 from '../assets/universalnost.png';
-import BoatIcon4 from '../assets/funkcionalnost.png';
 import i18n from 'i18next';
 
 export const readyModels = [
@@ -218,49 +214,6 @@ export const futureModels = [
 
 ]
 
-export const advantages = [
-    {
-        title: 'Качество',
-        desc: 'В производстве используются исключительно высококачественные материалы (морской алюминий 5083), детали и комплектующие, а лодки строятся опытными и квалифицированными мастерами.'
-    },
-    {
-        title: 'Ответственность',
-        desc: 'При проектировании и производстве лодок, наша компания соблюдает все необходимые стандарты качества как в подборе материалов, так и в работе.'
-    },
-    {
-        title: 'Гарантия',
-        desc: 'Наша компания предоставляют гарантию на корпус каждой модели лодки на 3 года (гарантия действительна только в случаях правильной эксплуатации в соответствии с руководством по использованию).'
-    },
-    {
-        title: 'Индивидуальный подход',
-        desc: 'Наша компания всегда гибко подходит к запросам клиента и готова найти решение в соответствии с любыми индивидуальными требованиями.'
-    }
-
-]
-
-export const whyUs = [
-    {
-        title: 'Сертификации',
-        desc: 'Все модели лодок, которые производит наша компания, без исключения, имеют сертификат качества и CE/E маркировку.',
-        icon: BoatIcon1
-        },
-        {
-            title: 'Надежность',
-            desc: 'Наши лодки прекрасно показывают себя в различных условиях и подходят как для прибрежных, так и для внутренних вод.',
-            icon: BoatIcon2
-        },
-        {
-            title: 'Универсальность',
-            desc: 'По завершению производства, все наши лодки проходят тщательные испытания, а также, уверенно показали себя в экстремальных ситуациях в северных морях.',
-            icon: BoatIcon3
-        },
-    {
-        title: 'Функциональность',
-        desc: 'Наши лодки круглогодично используются клиентами как в рабочих целях (в т.ч. перевозка материалов, людей), так и для спокойного отдыха в свободное время.',
-        icon: BoatIcon4
-    }
-]
-
 export const reviews = [
     {
         avatar: Avatar,
@@ -288,23 +241,4 @@ export const reviews = [
     }
 ]
 
-export const contacts = [
-    {
-        street: 'Jaunā iela 74, LV-3401, Liepāja, Latvija',
-        phone: '+371 29984546 (Pavel Pylskij)',
-        email: 'bpm_s@inbox.lv',
-        contacts: 'Контакты в Латвии'
-    },
-    {
-        // street: 'Jaunā iela 74, LV-3401, Liepāja, Latvija',
-        phone: '+47 456 66 111 (Vlad Misko)',
-        email: 'bpm_s@inbox.lv',
-        contacts: 'Контакты в Норвегии'
-    },
-    {
-        // street: `Jaunā iela 74,LV-3401, Liepāja, Latvija`,
-        phone: '+358 442550505 (Jaakko Jätinvuori)',
-        email: 'bpm_s@inbox.lv',
-        contacts: 'Контакты в Финляндии'
-    }
-]
+

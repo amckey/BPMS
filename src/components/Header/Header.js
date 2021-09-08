@@ -1,38 +1,34 @@
 import React, {useState} from 'react';
+import i18next from '../../fixtures/i18next';
+import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
 import {useMediaQuery} from 'react-responsive';
 import styles from './Header.module.scss';
 import Logo from '../../assets/logo.svg';
 import Arrow from '../../assets/arrow.svg';
 import Burger from '../../assets/burger.svg';
-import {useTranslation} from 'react-i18next';
 
 const Header = () => {
     const isMobile = useMediaQuery({maxWidth: 767});
     const [toggleLanguages,setToggleLanguages] = useState(false);
     const [toggleBurger, setToggleBurger] = useState(false);
     const [language, setLanguage] = useState('Русский');
-    const {i18n} = useTranslation();
+    const {i18n, t} = useTranslation();
     const nav = [
         {
-            title: 'Каталог',
+            title: i18next.t('catalogue'),
             to: '/catalogue',
         },
         {
-            title: 'Преимущества',
+            title: i18next.t('ourAdvantages'),
             to: '/advantages',
         },
         {
-            title: 'Почему мы?',
+            title: i18next.t('whyUs'),
             to: '/why_us',
-        }
-        // {
-        //     title: 'Отзывы',
-        //     to: '/reviews',
-        // }
-        ,
+        },
         {
-            title: 'Связаться с нами',
+            title: i18next.t('contactUs'),
             to: '/contacts',
         }
     ]
