@@ -59,7 +59,70 @@ let en = {
     contactsInFinland: "Contacts in Finland",
 
     yes:  "Yes",
-    byRequest: "By request"
+    byRequest: "By request",
+
+    technicalDetails: "Technical details of",
+    equipment: "Equipment",
+    accessories: "Accessories",
+    length: "Length",
+    width: "Width",
+    numberOfPassengers: "Number of passengers",
+    selfDraining: "Self-draining",
+    hull: "Hull",
+    comfortSeats: "Comfort seats",
+    railings: "Railings",
+    deck: "Deck",
+    side: "Side",
+    totalLength: "Total length",
+    weight: "Weight",
+    loadCapacity: "Total load capacity",
+    approval: "Approval",
+    unsinkableConstruction: "Unsinkable construction",
+    seatBoxes: "Seat boxes",
+    steeringConsole: "Steering console",
+    flotation: "Flotation",
+    windshield: "Windshield",
+    bottom: "Bottom",
+    inboard: "Inboard",
+    lockableStorageUnits: "Lockable storage units",
+    hydraulicSteering: "Hydraulic steering",
+    pump: "Manual bilge pump or electrical pump",
+    navigationLights: "Navigation lights",
+    hook: "Hook for trailer/locking",
+    bracket: "Transducer bracket",
+    outlet: "12V outlet",
+    fireExtinguisher: "Fire extinguisher",
+    polycarbonateWindshield: "Steering console, polycarbonate windshield",
+    boatRubberFender: "Boat rubber fender",
+    hullPainting: "Hull painting",
+    ladder: "Swimming ladder",
+    targa: "Targa",
+
+    aluminium: "Aluminium",
+    polycarbonatMonolit: "Policarbonat monolit",
+
+    mm: "mm",
+    m: "m",
+    kg: "kg",
+
+    almarcraft590: "Almarcraft 590",
+    almarcraft590Desc: "Our model of aluminum boat for fishing and sports is an ideal choice for fishermen with friends and families who want to enjoy not only fishing, but also water sports or skiing.",
+    almarcraft590Add: "At the request of the customer, the engine is installed (components for the engine can be ordered independently or sent to the customer) and the necessary components (throttle mounting, start key, tachometer, tilt indicator)",
+
+    almarcraft590withTarga: "Almarcraft 590 with targa",
+    almarcraft590withTargaDesc: "Equipment, decoration and details make each Almarcraft boat unique, but the durable hull remains unchanged. The fields of application are numerous, and we produce not only pleasure and fishing boats, but also boats for professional use.",
+    almarcraft590withTargaAdd: "At the request of the customer, the engine is installed (components for the engine can be ordered independently or sent to the customer) and the necessary components (throttle mounting, start key, tachometer, tilt indicator)",
+
+    almarcraft470: "Almarcraft 470",
+    almarcraft470Desc: "The Almarcraft 470 boat is perfect for both fishing and family holidays. It can be used not only in open water, but also in inland waters. At this moment, the certification process is underway.",
+    almarcraft470Add: "At the request of the customer, the engine is installed (components for the engine can be ordered independently or sent to the customer) and the necessary components (throttle mounting, start key, tachometer, tilt indicator)",
+
+    almarcraft590withCabin: "Almarcraft 590 with cabin",
+    almarcraft590withCabinDesc: "The Almarcraft 590 model with a cabin can be used not only for recreation and fishing, but also as a working boat. It is resistant to the harsh weather conditions of Scandinavia.",
+
+    boatUnderDevelopment: "The boat is under development",
+    boatUnderDevelopmentDesc: "At the moment, the boat is under development, technical data and photos will be added later when the boat begins to pass certification",
+    orangeBannerText: "Please note that this model is still at the certification stage and will be available very soon. For more information, please contact us."
   }
 };
 

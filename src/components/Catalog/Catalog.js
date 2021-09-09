@@ -45,6 +45,10 @@ const Catalog = ({catalogRef}) => {
     })
 
     const readyModelsItems = readyModels.map((item, index) => {
+        const title = item?.main.title === 'almarcraft590' ? i18next.t('almarcraft590') :
+        item?.main.title === 'almarcraft590targa' ? i18next.t('almarcraft590withTarga') :
+        item?.main.title === 'almarcraft470' ? i18next.t('almarcraft470') : 
+        i18next.t('almarcraft590withCabin');
         return (
             <li key={index}>
                 <div className={styles.menu_item}>
@@ -52,11 +56,11 @@ const Catalog = ({catalogRef}) => {
                         <img src={item.main.picture} alt="boat"/>
                     </div>
                     <div className={styles.menu_info}>
-                        <h3>{item.main.title}</h3>
+                        <h3>{title}</h3>
                         <div className={styles.menu_text}>
-                            {item.main.metal && <p>{i18next.t('metal')}: {item.main.metal}</p>}
+                            {item.main.metal && <p>{i18next.t('metal')}: {item.main.metal && i18next.t('aluminium')}</p>}
                             {item.main.motor && <p>{i18next.t('engine')}: {item.main.motor}</p>}
-                            {item.main.fuelTank && <p>{i18next.t('fuelTank')}: {item.main.fuelTank}</p>}
+                            {item.main.fuelTank && <p>{i18next.t('fuelTank')}: {item.main.fuelTank === 'by request' ? i18next.t('byRequest') : '-'}</p>}
                         </div>
                         <div className={styles.menu_button}>
                             <Link to={`/boats/${item.main.short_link}`}>{i18next.t('view')}</Link>
@@ -68,6 +72,10 @@ const Catalog = ({catalogRef}) => {
     })
 
     const futureModelsItems = futureModels.map((item, index) => {
+        const title = item?.main.title === 'almarcraft590' ? i18next.t('almarcraft590') :
+        item?.main.title === 'almarcraft590targa' ? i18next.t('almarcraft590withTarga') :
+        item?.main.title === 'almarcraft470' ? i18next.t('almarcraft470') : 
+        i18next.t('almarcraft590withCabin');
         return (
             <li key={index}>
                 <div className={styles.menu_item}>
@@ -75,11 +83,11 @@ const Catalog = ({catalogRef}) => {
                         <img src={item.main.picture} alt="boat"/>
                     </div>
                     <div className={styles.menu_info}>
-                        <h3>{item.main.title}</h3>
+                        <h3>{title}</h3>
                         <div className={styles.menu_text}>
-                            {item.main.metal && <p>{i18next.t('metal')}: {item.main.metal}</p>}
+                            {item.main.metal && <p>{i18next.t('metal')}: {item.main.metal && i18next.t('aluminium')}</p>}
                             {item.main.motor && <p>{i18next.t('engine')}: {item.main.motor}</p>}
-                            {item.main.fuelTank && <p>{i18next.t('fuelTank')}: {item.main.fuelTank}</p>}
+                            {item.main.fuelTank && <p>{i18next.t('fuelTank')}: {item.main.fuelTank === 'by request' ? i18next.t('byRequest') : '-'}</p>}
                         </div>
                         <div className={styles.menu_button}>
                             <Link to={`/boats/${item.main.short_link}`}>{i18next.t('view')}</Link>

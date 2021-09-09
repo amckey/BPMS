@@ -2,8 +2,11 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import styles from './BoatGallery.module.scss';
 import {useMediaQuery} from "react-responsive";
+import {useTranslation} from 'react-i18next';
+import i18next from "../../fixtures/i18next";
 
 const BoatGallery = ({item}) => {
+    const {t} = useTranslation();
     const isMobile = useMediaQuery({maxWidth: 767});
     const [readyModelsState, setReadyModelsState] = useState(null);
     useEffect(() => {
@@ -36,7 +39,7 @@ const BoatGallery = ({item}) => {
                     </ul>
                 </div>
                 <div className={styles.gallery_button}>
-                    <Link to="/contacts" replace className={styles.gallery_link}>Получить предложение</Link>
+                    <Link to="/contacts" replace className={styles.gallery_link}>{i18next.t('getPromotion')}</Link>
                 </div>
             </div>
         </div>

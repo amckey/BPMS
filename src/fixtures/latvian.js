@@ -59,7 +59,70 @@ let lv = {
     contactsInFinland: "Kontakti Somijā",
     
     yes: "Jā",
-     byRequest: "Pēc pieprasījuma"
+    byRequest: "Pēc pieprasījuma",
+
+    technicalDetails: "Tehniskās detaļas",
+    equipment: "Iekārtas",
+    accessories: "Aksesuāri",
+    length: "Garums",
+    width: "Platums",
+    numberOfPassengers: "Pasažierietilpība",
+    selfDraining: "Drenāžas sistēma",
+    hull: "Korpusa materiāls",
+    comfortSeats: "Sēdekļi ar komfortu",
+    railings: "Margas",
+    deck: "Laivu klājs",
+    side: "Iekšējā konstrukcija",
+    totalLength: "Gabarītgarums",
+    weight: "Svars",
+    loadCapacity: "Kravnesība (Pasažieri un bagāža)",
+    approval: "Kategorija",
+    unsinkableConstruction: "Neiegremdējama konstrukcija",
+    seatBoxes: "Sēdvietas",
+    steeringConsole: "Stūres konsole",
+    flotation: "Laivas peldspēja",
+    windshield: "Vējstikls",
+    bottom: "Dibena biezums",
+    inboard: "Borta biezums",
+    lockableStorageUnits: "Aizveramie skapīši",
+    hydraulicSteering: "Hidroliskā stūres vadība",
+    pump: "Rūmes rokas sūknis vai elektriskais sūknis",
+    navigationLights: "Navigācijas gaismas",
+    hook: "Āķis priekš piekabes bloķēšanas",
+    bracket: "Devēja turētājs",
+    outlet: "Kontakts 12v",
+    fireExtinguisher: "Ugunsdzēšamais",
+    polycarbonateWindshield: "Stūres panelis, priekšējais stikls no polikarbonāta",
+    boatRubberFender: "Platforma priekš peldēšanās",
+    hullPainting: "Korpusa nokrāsošana",
+    ladder: "Trepe priekš peldēšanās",
+    targa: "Duga",
+
+    mm: "mm",
+    m: "m",
+    kg: "kg",
+
+    aluminium: "Alumīnijs",
+    polycarbonatMonolit: "Monolītais polikarbonāts",
+
+    almarcraft590: "Almarcraft 590",
+    almarcraft590Desc: "Mūsu alumīnija laivas modelis, makšķerēšanai un sportam - lieliska izvēle makšķerniekiem un viņu draugiem un ģimenēm, kas vēlas baudīt ne tikai makšķerēšanu, bet arī nodarboties ar ūdens sporta veidiem vai slēpot.",
+    almarcraft590Add: "Pēc pasūtītāja velmēm tiek uzstādīts dzinējs (dzinēju sastāvdaļas var pasūtīt patstāvīgi vai nosūtīt pasūtītājam) un nepieciešamās sastāvdaļas (stiprinājums droseli, atslēga, tahometrs,  slīpumu indikators)",
+
+    almarcraft590withTarga: "Almarcraft 590 ar dugu",
+    almarcraft590withTargaDesc: "Aprīkojums, apdare un detaļas padara katru Almarcraft laivu unikālu, bet izturīgs korpuss paliek nemainīgs. Pielietojums ir daudzveidīgs un mēs ražojam ne tikai pastaigu un zvejnieku laivas, bet arī laivas profesionālai lietošanai.",
+    almarcraft590withTargaAdd: "Pēc pasūtītāja velmēm tiek uzstādīts dzinējs (dzinēju sastāvdaļas var pasūtīt patstāvīgi vai nosūtīt pasūtītājam) un nepieciešamās sastāvdaļas (stiprinājums droseli, atslēga, tahometrs,  slīpumu indikators)",
+
+    almarcraft470: "Almarcraft 470",
+    almarcraft470Desc: "Laiva Almarcraft 470 lieliski piemērota makšķerēšanai un ģimenes atpūtai. Var izmantot ne tikai atklātajā ūdenī, bet arī iekšējos ūdeņos. Šobrīd iziet sertifikācijas procesu.",
+    almarcraft470Add: "Vēršam uzmanību, ka šis modelis joprojām iziet sertifikāciju un ļoti drīz būs pieejams. Lai iegūtu vairāk informācijas, lūdzu, sazinieties ar mums.",
+
+    almarcraft590withCabin: "Almarcraft 590 ar kabīni",
+    almarcraft590withCabinDesc: "Modelis Almarcraft 590 ar kabīni var izmantot ne tikai atpūtai un makšķerēšanai, bet arī darba procesam. Izturīgs pret Skandināvijas sliktiem laika apstākļiem .",
+
+    boatUnderDevelopment: "Laiva ir izstrādes stadijā",
+    boatUnderDevelopmentDesc: "Šobrīd laiva ir izstrādes stadijā, tehniskie dati un fotogrāfijas tiks pievienoti vēlāk, kad laiva sāks iziet sertifikāciju",
+    orangeBannerText: "Vēršam uzmanību, ka šis modelis joprojām iziet sertifikāciju un ļoti drīz būs pieejams. Lai iegūtu vairāk informācijas, lūdzu, sazinieties ar mums."
   }
 }; 
 

@@ -16,49 +16,46 @@ const BoatDesc = ({item}) => {
         }
     }, [item])
     const techDetails = readyModelsState && [
-        {title: 'Длина', value: readyModelsState.main.length},
-        {title: 'Ширина', value: readyModelsState.main.width},
-        {title: 'Количество пассажиров', value: readyModelsState.main.passengers},
-        {title: 'Двигатель', value: readyModelsState.main.engine},
-        {title: 'Дренаж', value: readyModelsState.main.selfDraining},
-        {title: 'Корпус', value: readyModelsState.main.hull},
-        {title: 'Удобные сиденья', value: readyModelsState.main.seats},
-        {title: 'Поручни', value: readyModelsState.main.raillings},
-        {title: 'Палуба', value: readyModelsState.main.deck},
-        {title: 'Топливный бак', value: readyModelsState.main.fuelTank},
-        // {title: 'Борта', value: readyModelsState.main.transom},
-        {title: 'Внутренняя конструкция', value: readyModelsState.main.inboard},
-        {title: 'Общая длина', value: readyModelsState.main.totalLength},
-        {title: 'Вес', value: readyModelsState.main.weight},
-        {title: 'Общая грузоподъемность', value: readyModelsState.main.capacity},
-        {title: 'Сертификация', value: readyModelsState.main.approval},
-        {title: 'Непотопляемая конструкция', value: readyModelsState.main.construction},
-        {title: 'Коробки для сидений', value: readyModelsState.main.seatBoxes},
-        {title: 'Рулевая консоль', value: readyModelsState.main.steeringConsole},
-        {title: 'Плавучесть', value: readyModelsState.main.flotation},
-        {title: 'Ветровое стекло', value: readyModelsState.main.windshield},
-        {title: 'Днище', value: readyModelsState.main.bottom},
-        {title: 'Борта', value: readyModelsState.main.side},
+        {title: i18next.t('length'), value: `${readyModelsState.main.length} ${i18next.t('m')}`},
+        {title: i18next.t('width'), value: `${readyModelsState.main.width} ${i18next.t('m')}`},
+        {title: i18next.t('numberOfPassengers'), value: readyModelsState.main.passengers},
+        {title: i18next.t('engine'), value: readyModelsState.main.engine},
+        {title: i18next.t('selfDraining'), value: readyModelsState.main.selfDraining === "yes" ? i18next.t('yes') : i18next.t('byRequest')},
+        {title: i18next.t('hull'), value: readyModelsState.main.hull},
+        {title: i18next.t('comfortSeats'), value: readyModelsState.main.seats === "yes" ? i18next.t('yes') : i18next.t('byRequest')},
+        {title: i18next.t('railings'), value: readyModelsState.main.raillings && i18next.t('aluminium')},
+        {title: i18next.t('deck'), value: readyModelsState.main.deck && i18next.t('aluminium')},
+        {title: i18next.t('fuelTank'), value: readyModelsState.main.fuelTank === "yes" ? i18next.t('yes') : i18next.t('byRequest')},
+        {title: i18next.t('inboard'), value: `${readyModelsState.main.inboard} ${i18next.t('mm')}`},
+        {title: i18next.t('totalLength'), value: `${readyModelsState.main.totalLength} ${i18next.t('m')}`},
+        {title: i18next.t('weight'), value: `${readyModelsState.main.weight} ${i18next.t('kg')}`},
+        {title: i18next.t('loadCapacity'), value: `${readyModelsState.main.capacity} ${i18next.t('kg')}`},
+        {title: i18next.t('approval'), value: readyModelsState.main.approval},
+        {title: i18next.t('unsinkableConstruction'), value: readyModelsState.main.construction === "yes" ? i18next.t('yes') : i18next.t('byRequest')},
+        {title: i18next.t('seatBoxes'), value: readyModelsState.main.seatBoxes && i18next.t('aluminium')},
+        {title: i18next.t('steeringConsole'), value: readyModelsState.main.steeringConsole && i18next.t('aluminium')},
+        {title: i18next.t('flotation'), value: readyModelsState.main.flotation},
+        {title: i18next.t('windshield'), value: readyModelsState.main.windshield && i18next.t('polycarbonatMonolit')},
+        {title: i18next.t('bottom'), value: `${readyModelsState.main.bottom} ${i18next.t('mm')}`},
+        {title: i18next.t('side'), value: `${readyModelsState.main.side} ${i18next.t('mm')}`},
     ]
     const equipment = readyModelsState && readyModelsState.equipment && [
-        {title: 'Закрываемые рундуки', value: readyModelsState.equipment.storageUnits === "Да" ? i18next.t('yes') : i18next.t('byRequest')},
-        {title: 'Гидравлическое рулевое управление', value: readyModelsState.equipment.steering},
-        {title: 'Ручной трюмный насос или электрический насос', value: readyModelsState.equipment.pump},
-        {title: 'Навигационные огни', value: readyModelsState.equipment.lights},
-        {title: 'Крюк для прицепа/блокировки', value: readyModelsState.equipment.hook},
-        {title: 'Кронштейн датчика', value: readyModelsState.equipment.bracket},
-        {title: 'Лестница для плавания', value: readyModelsState.equipment.stairs},
-        {title: 'Розетка 12V', value: readyModelsState.equipment.socket},
-        {title: 'Огнетушитель', value: readyModelsState.equipment.fireExtinguisher},
-        {title: 'Рулевая консоль, лобовое стекло из поликарбоната', value: readyModelsState.equipment.temperedGlass},
-        {title: 'Площадка для плавания', value: readyModelsState.equipment.platform},
-        {title: 'Покраска корпуса', value: readyModelsState.equipment.hullPainting},
-        // {title: 'Boat rubber fender', value: readyModelsState.equipment.fender},
-        {title: 'Лестница для плавания', value: readyModelsState.equipment.ladder}
+        {title: i18next.t('lockableStorageUnits'), value: readyModelsState.equipment.storageUnits},
+        {title: i18next.t('hydraulicSteering'), value: readyModelsState.equipment.steering},
+        {title: i18next.t('pump'), value: readyModelsState.equipment.pump},
+        {title: i18next.t('navigationLights'), value: readyModelsState.equipment.lights},
+        {title: i18next.t('hook'), value: readyModelsState.equipment.hook},
+        {title: i18next.t('bracket'), value: readyModelsState.equipment.bracket},
+        {title: i18next.t('outlet'), value: readyModelsState.equipment.socket},
+        {title: i18next.t('fireExtinguisher'), value: readyModelsState.equipment.fireExtinguisher},
+        {title: i18next.t('polycarbonateWindshield'), value: readyModelsState.equipment.temperedGlass},
+        {title: i18next.t('boatRubberFender'), value: readyModelsState.equipment.platform},
+        {title: i18next.t('hullPainting'), value: readyModelsState.equipment.hullPainting},
+        {title: i18next.t('ladder'), value: readyModelsState.equipment.ladder}
     ]
 
     const accesories = readyModelsState && readyModelsState.accessories && [
-        {title: 'Тарга', value: readyModelsState.accessories.targa},
+        {title: i18next.t('targa'), value: readyModelsState.accessories.targa},
     ]
 
     const techDetailsList = techDetails && techDetails.map((item, index) => {
@@ -80,7 +77,7 @@ const BoatDesc = ({item}) => {
             <li key={index}>
                 <div className={styles.desc_item}>
                     <p>{item.title}</p>
-                    <p>{item.value}</p>
+                    <p>{item.value === "yes" ? i18next.t('yes') : i18next.t('byRequest')}</p>
                 </div>
             </li>
         )
@@ -92,11 +89,22 @@ const BoatDesc = ({item}) => {
             <li key={index}>
                 <div className={styles.desc_item}>
                     <p>{item.title}</p>
-                    <p>{item.value}</p>
+                    <p>{item.value === "yes" ? i18next.t('yes') : i18next.t('byRequest')}</p>
                 </div>
             </li>
         )
     })
+
+    const title = readyModelsState?.main.title === 'almarcraft590' ? i18next.t('almarcraft590') :
+    readyModelsState?.main.title === 'almarcraft590targa' ? i18next.t('almarcraft590withTarga') :
+    readyModelsState?.main.title === 'almarcraft470' ? i18next.t('almarcraft470') : 
+    i18next.t('almarcraft590withCabin');
+
+    const additional = readyModelsState?.additional === 'almarcraft590' ? i18next.t('almarcraft590Add') :
+    readyModelsState?.additional === 'almarcraft590targa' ? i18next.t('almarcraft590withTargaAdd') :
+     i18next.t('almarcraft470Add');
+   
+
     const handleToggleState = (item) => {
         if(item === readyModelsState.main) {
             const newReadyModelsState = {...readyModelsState};
@@ -123,8 +131,8 @@ const BoatDesc = ({item}) => {
     if(readyModelsState && !readyModelsState.certification) {
         return <div className={styles.desc}>
             <div className={styles.desc_container}>
-                <h3 style={{fontSize: 24, textTransform: 'uppercase'}}>Лодка в стадии разработки</h3>
-                <p className={styles.notReady}>в данный момент лодка находится в стадии разработки, технические данные и фотографии будут добавлены позже, когда лодка начнет проходить сертификацию</p>
+                <h3 style={{fontSize: 24, textTransform: 'uppercase'}}>{i18next.t('boatUnderDevelopment')}</h3>
+                <p className={styles.notReady}>{i18next.t('boatUnderDevelopmentDesc')}</p>
             </div>
         </div>
     }
@@ -136,24 +144,24 @@ const BoatDesc = ({item}) => {
                         {readyModelsState && !readyModelsState.main.available &&
                         <div className={styles.desc_banner}>
                             <p>
-                                Обращаем внимание, что эта модель все еще находится на стадии сертификации и очень скоро будет доступна. Для получения дополнительной информации свяжитесь с нами.
+                                {i18next.t('orangeBannerText')}
                             </p>
-                            <Link to='/contacts' replace>Связаться с нами</Link>
+                            <Link to='/contacts' replace>{i18next.t('contactUs')}</Link>
                         </div>}
-                        <h3>{readyModelsState && readyModelsState.main.title}</h3>
-                        <p>{readyModelsState && readyModelsState.additional}</p>
+                        <h3>{title}</h3>
+                        <p>{additional}</p>
                     </div>
                     <div className={styles.desc_elements}>
                         <div className={styles.desc_element}>
-                            <h4>Длина</h4>
-                            <p>{item && item.main.length} М</p>
+                            <h4>{i18next.t('length')}</h4>
+                            <p>{item && item.main.length} {i18next.t('m')}</p>
                         </div>
                         <div className={styles.desc_element}>
-                            <h4>Ширина</h4>
-                            <p>{readyModelsState && readyModelsState.main.width} М</p>
+                            <h4>{i18next.t('width')}</h4>
+                            <p>{readyModelsState && readyModelsState.main.width} {i18next.t('m')}</p>
                         </div>
                         <div className={styles.desc_element}>
-                            <h4>Двигатель</h4>
+                            <h4>{i18next.t('engine')}</h4>
                             <p>{readyModelsState && readyModelsState.main.engine}</p>
                         </div>
                     </div>
@@ -161,9 +169,9 @@ const BoatDesc = ({item}) => {
                 <div className={styles.desc_tables}>
                     <div className={styles.desc_technical}>
                         <div className={styles.desc_table}>
-                            {!isMobile ? <h3>Технические детали <span>"{readyModelsState && readyModelsState.main.title}"</span></h3> :
+                            {!isMobile ? <h3>{i18next.t('technicalDetails')} <span>"{title}"</span></h3> :
                             <div className={styles.desc_mobile}>
-                                <h3>Технические детали <span>"{readyModelsState && readyModelsState.main.title}"</span></h3>
+                                <h3>{i18next.t('technicalDetails')} <span>"{title}"</span></h3>
                                 <button className={styles.desc_button} onClick={() => handleToggleState(readyModelsState.main)}>
                                     <img style={readyModelsState && readyModelsState.main.active ? {transform: 'rotate(180deg)'} : {transform: 'rotate(0)'}} src={arrow} alt="arrow"/>
                                 </button>
@@ -184,9 +192,9 @@ const BoatDesc = ({item}) => {
                     </div>
                     <div className={styles.desc_technical}>
                         <div className={styles.desc_table}>
-                            {!isMobile ? <h3>Оборудование <span>"{readyModelsState && readyModelsState.main.title}"</span></h3> :
+                            {!isMobile ? <h3>{i18next.t('equipment')} <span>"{title}"</span></h3> :
                                 <div className={styles.desc_mobile}>
-                                    <h3>Оборудование <span>"{readyModelsState && readyModelsState.main.title}"</span></h3>
+                                    <h3>{i18next.t('equipment')} <span>"{title}"</span></h3>
                                     <button className={styles.desc_button} onClick={() => handleToggleState(readyModelsState.equipment)}>
                                         <img style={readyModelsState && readyModelsState.equipment.active ? {transform: 'rotate(180deg)'} : {transform: 'rotate(0)'}} src={arrow} alt="arrow"/>
                                     </button>
@@ -205,9 +213,9 @@ const BoatDesc = ({item}) => {
                             }
                         </div>
                         {accesories && readyModelsState && readyModelsState.accessories.content && <div className={styles.desc_table}>
-                            {!isMobile ? <h3>Аксессуары <span>"{readyModelsState && readyModelsState.main.title}"</span></h3> :
+                            {!isMobile ? <h3>{i18next.t('accessories')} <span>"{title}"</span></h3> :
                                 <div className={styles.desc_mobile}>
-                                    <h3>Аксессуары <span>"{readyModelsState && readyModelsState.main.title}"</span></h3>
+                                    <h3>{i18next.t('accessories')} <span>"{title}"</span></h3>
                                     <button className={styles.desc_button} onClick={() => handleToggleState(readyModelsState.accessories)}>
                                         <img style={readyModelsState && readyModelsState.accessories.active ? {transform: 'rotate(180deg)'} : {transform: 'rotate(0)'}}src={arrow} alt="arrow"/>
                                     </button>
