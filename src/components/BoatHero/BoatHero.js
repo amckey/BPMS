@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import styles from './BoatHero.module.scss';
 import Header from "../Header/Header";
+import Logo from "../../assets/logo.svg";
 import {useTranslation} from 'react-i18next';
 import i18next from "../../fixtures/i18next";
 
@@ -14,7 +15,7 @@ const BoatHero = ({item}) => {
         if(item) {
             setReadyModelsState(item)
         }
-    }, [item, loading])
+    }, [item])
     const handleLoad = () => {
         setLoading(false);
         console.log('loaded');
@@ -40,9 +41,13 @@ const BoatHero = ({item}) => {
              } : undefined} >
             <Header/>
             {readyModelsState && readyModelsState.video ?
-                <video autoPlay loop muted className={styles.video} playsInline src={readyModelsState && readyModelsState.video} onLoadedData={handleLoad}>
+                <video autoPlay loop muted className={styles.video} playsInline src={readyModelsState && readyModelsState.video} onPlay={handleLoad}>
                 <source src={readyModelsState && readyModelsState.video} type="video/mp4"/>
             </video> : null}
+            {loading && <div style={{position: 'ŗelative', top: 0, left: 0, zIndex: 10, height: '100vh', background: '#1d2025', display: 'flex', justifyContent: "center", alignItems: "center", fontSize: "24px", flexDirection: "column"}}>
+                <img src={Logo} alt="logo" style={{marginBottom: 15}}/>
+                Loading...
+            </div>}
             <div className={styles.hero_container}>
                 <div className={styles.hero_text}>
                     <h1>{title}</h1>
