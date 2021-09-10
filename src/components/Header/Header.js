@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import {useSelector, useDispatch} from "react-redux";
+import {setLanguage} from '../../store/actions';
 import i18next from '../../fixtures/i18next';
 import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
@@ -12,8 +14,11 @@ const Header = () => {
     const isMobile = useMediaQuery({maxWidth: 767});
     const [toggleLanguages,setToggleLanguages] = useState(false);
     const [toggleBurger, setToggleBurger] = useState(false);
-    const [language, setLanguage] = useState('Русский');
     const {i18n, t} = useTranslation();
+    const reduxLanguage = useSelector(state => state.language.language);
+
+    const dispatch = useDispatch();
+
     const nav = [
         {
             title: i18next.t('catalogue'),
@@ -39,9 +44,8 @@ const Header = () => {
         {language: 'English', lng: 'en'}
     ]
     const handleLanguage = (language, lng) => {
-        setLanguage(language);
+        dispatch(setLanguage(language))
         i18n.changeLanguage(lng);
-        console.log(lng);
     }
 
     const languageItems = languages.map((item, index) => {
@@ -84,7 +88,7 @@ const Header = () => {
                     <ul>{navList}</ul>
                 </nav>}
                 <div className={styles.header_languages} onClick={handleToggleLanguages}>
-                    <div>{language}</div>
+                    <div>{reduxLanguage}</div>
                     <div className={styles.arrow}>
                         <img src={Arrow} alt="arrow" style={toggleLanguages ? {transform: 'rotate(180deg)'} : {transform: 'rotate(0)'}}/>
                     </div>
