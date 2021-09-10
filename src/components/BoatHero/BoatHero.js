@@ -48,7 +48,7 @@ const BoatHero = ({item}) => {
                  backgroundRepeat: 'no-repeat',
                  backgroundSize: 'cover'
              } : undefined} >
-            <Header/>
+            {!readyModelsState?.video || (readyModelsState?.video && !loading) ? <Header/> : null}
             {readyModelsState && readyModelsState.video ?
                 <video autoPlay loop muted className={styles.video} playsInline src={readyModelsState && readyModelsState.video} onPlay={handleLoad}>
                 <source src={readyModelsState && readyModelsState.video} type="video/mp4"/>
