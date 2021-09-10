@@ -53,7 +53,7 @@ const BoatHero = ({item}) => {
                 <video autoPlay loop muted className={styles.video} playsInline src={readyModelsState && readyModelsState.video} onPlay={handleLoad}>
                 <source src={readyModelsState && readyModelsState.video} type="video/mp4"/>
             </video> : null}
-            {loading && LoaderComponent}
+            {loading && readyModelsState?.video && LoaderComponent}
             <div className={styles.hero_container}>
                 <div className={styles.hero_text}>
                     <h1>{title}</h1>
