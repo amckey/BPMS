@@ -32,6 +32,15 @@ const BoatHero = ({item}) => {
     readyModelsState?.main.title === 'almarcraft470' ? i18next.t('almarcraft470Desc') : 
     i18next.t('almarcraft590withCabinDesc');
 
+    const LoaderComponent = (
+        <div style={{zIndex: 9, height: "1000vh", display: "flex", alignItems: "flex-start", background: '#1d2025', width: "100%"}}>
+            <div style={{position: 'ŗelative', top: 0, left: 0, zIndex: 10, height: '100vh', background: '#1d2025', display: 'flex', justifyContent: "center", alignItems: "center", fontSize: "24px", flexDirection: "column", width: "100%"}}>
+                <img src={Logo} alt="logo" style={{marginBottom: 15}}/>
+                Loading...
+            </div>
+        </div>
+    )
+
     return (
         <div className={styles.hero}
              style={readyModelsState && !readyModelsState.video ? {
@@ -44,10 +53,7 @@ const BoatHero = ({item}) => {
                 <video autoPlay loop muted className={styles.video} playsInline src={readyModelsState && readyModelsState.video} onPlay={handleLoad}>
                 <source src={readyModelsState && readyModelsState.video} type="video/mp4"/>
             </video> : null}
-            {loading && <div style={{position: 'ŗelative', top: 0, left: 0, zIndex: 10, height: '100vh', background: '#1d2025', display: 'flex', justifyContent: "center", alignItems: "center", fontSize: "24px", flexDirection: "column"}}>
-                <img src={Logo} alt="logo" style={{marginBottom: 15}}/>
-                Loading...
-            </div>}
+            {!loading && LoaderComponent}
             <div className={styles.hero_container}>
                 <div className={styles.hero_text}>
                     <h1>{title}</h1>
