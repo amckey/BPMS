@@ -15,7 +15,7 @@ const BoatHero = ({item}) => {
         if(item) {
             setReadyModelsState(item)
         }
-    }, [item, readyModelsState])
+    }, [item, readyModelsState, loading])
     const handleLoad = () => {
         setLoading(false);
         console.log('loaded');
