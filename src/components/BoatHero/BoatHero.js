@@ -15,7 +15,7 @@ const BoatHero = ({item}) => {
         if(item) {
             setReadyModelsState(item)
         }
-    }, [item, readyModelsState, loading])
+    }, [item, readyModelsState])
     const handleLoad = () => {
         setLoading(false);
         console.log('loaded');
@@ -48,7 +48,8 @@ const BoatHero = ({item}) => {
                  backgroundRepeat: 'no-repeat',
                  backgroundSize: 'cover'
              } : undefined} >
-            {!readyModelsState?.video || (readyModelsState?.video && !loading) ? <Header/> : null}
+            {/* {!readyModelsState?.video || (readyModelsState?.video && !loading) ? <Header/> : null} */}
+            <Header />
             {readyModelsState && readyModelsState.video ?
                 <video autoPlay loop muted className={styles.video} playsInline src={readyModelsState && readyModelsState.video} onPlay={handleLoad}>
                 <source src={readyModelsState && readyModelsState.video} type="video/mp4"/>
