@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^12.1.10",
     "connected-react-router": "^6.9.1",
     "gh-pages": "^3.2.3",
-    "history": "^5.0.1",
+    "history": "^4.10.1",
     "i18next": "^20.4.0",
     "node-sass": "^6.0.1",
     "normalize.css": "^8.0.1",

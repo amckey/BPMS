@@ -21,20 +21,21 @@ const Home = (props) => {
             behavior: "auto",
         });
     };
+    console.log(props.match.url);
     const scroll = () => {
-        if(props.match.params.section === 'catalogue') {
+        if(props.match.url === '/catalogue') {
             scrollTo(catalogRef)
-        }else if(props.match.params.section === 'reviews') {
+        }else if(props.match.url === '/reviews') {
             scrollTo(reviewsRef)
-        }else if(props.match.params.section === 'why_us') {
+        }else if(props.match.url === '/why_us') {
             scrollTo(whyUsRef)
-        }else if(props.match.params.section === 'advantages') {
+        }else if(props.match.url === '/advantages') {
             scrollTo(advantagesRef)
-        }else if(props.match.params.section === 'contacts') {
+        }else if(props.match.url === '/contacts') {
             scrollTo(contactRef)
-        }else if(props.match.params.section === 'learn_more') {
+        }else if(props.match.url === '/learn_more') {
             scrollTo(contactRef)
-        }else if(props.match.params.section === 'get_promotion') {
+        }else if(props.match.url === '/get_promotion') {
             scrollTo(contactRef)
         }else {
             goTop()

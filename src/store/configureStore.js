@@ -19,7 +19,7 @@ const middleware = [
 ];
 
 const enhancers = composeEnhancers(applyMiddleware(...middleware));
-const store = createStore(rootReducer, enhancers);
+const store = createStore(rootReducer, {}, enhancers);
 
 
 export default store;
