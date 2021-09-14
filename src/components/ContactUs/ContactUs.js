@@ -11,39 +11,10 @@ const ContactUs = ({contactRef}) => {
     const {t} = useTranslation();
     const isMobile = useMediaQuery({maxWidth: 767});
     const [toggleModal, setToggleModal] = useState(false);
-    const [form, setForm] = useState({
-        name: '',
-        surname: '',
-        contact: '',
-        message: ''
-    })
+    const GOOGLE_FORM_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc893qm2MIGNwGzcMpxeQLebiMbkXw3-1qtg8t2BMeK5Wdv_g/formResponse";
 
-    const handleTextField = e => {
-        setForm({...form, [e.target.id]: e.target.value})
-    };
-
-    const handleSubmit = (e) => {
-        const googleFormEndpoint = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc893qm2MIGNwGzcMpxeQLebiMbkXw3-1qtg8t2BMeK5Wdv_g/formResponse";
-        let request = new XMLHttpRequest();
-        request.open('POST', googleFormEndpoint, true);
-
-        request.onload = function() {
+    const handleSubmit = () => {
             setToggleModal(true);
-            setForm({
-                    name: '',
-                    surname: '',
-                    contact: '',
-                    message: ''
-                })
-        };
-
-        request.onerror = function() {
-            console.log("err");
-        };
-
-        request.send(form);
-        e.preventDefault();
-        
     }
 
     return (
@@ -77,31 +48,31 @@ const ContactUs = ({contactRef}) => {
                     >
                     </iframe>
                     <form
-                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc893qm2MIGNwGzcMpxeQLebiMbkXw3-1qtg8t2BMeK5Wdv_g/formResponse"
-                        method="POST"
+                        action={GOOGLE_FORM_URL}
+                        method="post"
                         target="hidden_iframe"
-                        mode
                         onSubmit={handleSubmit}>
                         {!isMobile ? <div className={styles.form_name}>
-                            <input name="entry.990647386" type="text" id="name" placeholder={i18next.t('name')} className={styles.form_input} required value={form.name} onChange={handleTextField}/>
-                            <input name="entry.2005620554" type="text" id="surname" placeholder={i18next.t('surname')} className={styles.form_input} required value={form.surname} onChange={handleTextField}/>
+                        <input name="entry.990647386" type="text" placeholder={i18next.t('name')} className={styles.form_input} required />
+                            <input name="entry.2005620554" type="text" placeholder={i18next.t('surname')} className={styles.form_input} required />
                         </div> :
                             <><div className={styles.form_name}>
-                                <input name="entry.990647386" type="text" id="name" placeholder={i18next.t('name')} className={styles.form_input} required value={form.name} onChange={handleTextField}/>
+                            <input name="entry.990647386" type="text" placeholder={i18next.t('name')} className={styles.form_input} required />
                             </div>
-                            <div className={styles.form_name}>
-                                <input name="entry.2005620554" type="text" id="surname" placeholder={i18next.t('surname')} className={styles.form_input} required value={form.surname} onChange={handleTextField}/>
-                            </div></>}
+                          <div className={styles.form_name}>
+                               <input name="entry.2005620554" type="text" placeholder={i18next.t('surname')} className={styles.form_input} required />
+                        </div></>}
                         <div className={styles.form_contact}>
-                            <input name="entry.1045781291" type="text" id="contact" placeholder={i18next.t('emailAndPhone')} className={styles.form_input} required value={form.contact} onChange={handleTextField}/>
+                            <input name="entry.1045781291" type="text" placeholder={i18next.t('emailAndPhone')} className={styles.form_input} required />
                         </div>
                         <div className={styles.form_message}>
-                            <textarea name="entry.839337160" cols="30" rows="10" id="message" placeholder={i18next.t('message')} className={styles.form_input} required value={form.message} onChange={handleTextField}></textarea>
+                            <textarea name="entry.839337160" cols="30" rows="10" placeholder={i18next.t('message')} className={styles.form_input} required ></textarea>
                         </div>
                         <div className={styles.form_button}>
                             <button type="submit">{i18next.t('send')}</button>
                         </div>
                     </form>
+                    
                 </div>
             </div>
         </div>
