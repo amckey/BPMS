@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import axios from 'axios';
 import styles from './ContactUs.module.scss';
 import {useMediaQuery} from 'react-responsive';
 import i18next from '../../fixtures/i18next';
@@ -22,14 +23,27 @@ const ContactUs = ({contactRef}) => {
     };
 
     const handleSubmit = (e) => {
+        const googleFormEndpoint = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc893qm2MIGNwGzcMpxeQLebiMbkXw3-1qtg8t2BMeK5Wdv_g/formResponse";
+        let request = new XMLHttpRequest();
+        request.open('POST', googleFormEndpoint, true);
+
+        request.onload = function() {
+            setToggleModal(true);
+            setForm({
+                    name: '',
+                    surname: '',
+                    contact: '',
+                    message: ''
+                })
+        };
+
+        request.onerror = function() {
+            console.log("err");
+        };
+
+        request.send(form);
         e.preventDefault();
-        setToggleModal(true);
-        setForm({
-            name: '',
-            surname: '',
-            contact: '',
-            message: ''
-        })
+        
     }
 
     return (
@@ -56,16 +70,17 @@ const ContactUs = ({contactRef}) => {
                 <h2>{i18next.t('contactUs')}</h2>
                 <div className={styles.contact_form}>
                     <iframe
-                    title="form"
+                    title="hidden_iframe"
                     name="hidden_iframe"
                     id="hidden_iframe"
-                    style={{display: 'none'}}
+                    style={{visibility: 'hidden', height: '1px'}}
                     >
                     </iframe>
                     <form
                         action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc893qm2MIGNwGzcMpxeQLebiMbkXw3-1qtg8t2BMeK5Wdv_g/formResponse"
-                        method="post"
+                        method="POST"
                         target="hidden_iframe"
+                        mode
                         onSubmit={handleSubmit}>
                         {!isMobile ? <div className={styles.form_name}>
                             <input name="entry.990647386" type="text" id="name" placeholder={i18next.t('name')} className={styles.form_input} required value={form.name} onChange={handleTextField}/>
